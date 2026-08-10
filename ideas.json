@@ -1,0 +1,1563 @@
+[
+  {
+    "id": "httpsdevtokoushikmayacssarchitecture257i",
+    "title": "CSS Architecture",
+    "url": "https://dev.to/koushikmaya/css-architecture-257i",
+    "source": "DEV Community",
+    "summary": "&lt;h1&gt; Responsive CSS: From Mobile-First Design to Modern Styling &lt;/h1&gt; &lt;p&gt;Responsive design is about creating websites that work well across mobile, tablet, and desktop screens. In this post, I learned some important techniques for building responsive and maintainable CSS.&lt;/p&gt; &lt;h2&gt; 1. Mobile-First Media Queries &lt;/h2&gt; &lt;p&gt;Mobile-first means",
+    "tags": [
+      "css",
+      "design",
+      "ui",
+      "ia",
+      "ai",
+      "mobile",
+      "responsive"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtowebsilvercrafthowdoesdrizzlehandlemigrationspart2changingdatabasestructure1892",
+    "title": "How does Drizzle handle migrations - Part 2: Changing database structure",
+    "url": "https://dev.to/websilvercraft/how-does-drizzle-handle-migrations-part-2-changing-database-structure-1892",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Drizzle is built for that. You change the TypeScript schema, Drizzle generates a &lt;strong&gt;new migration&lt;/strong&gt; that alters your SQLite/D1 tables, and you apply it with Wrangler. High-level loop:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Edit TS schema (add/rename/drop columns, tables, indexes, constraints).&lt;/li&gt; &lt;li&gt; &lt;code&gt;npx drizzle-kit generate&lt;/code&gt; → emits",
+    "tags": [
+      "typescript",
+      "ui",
+      "ai",
+      "schema"
+    ],
+    "foundAt": "2026-08-10T07:06:33.618Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoamanimoses3166424e7ee1chowtouseclaudedesign20tocreatehighqualityuiwithoutaislop4fo1",
+    "title": "How to Use Claude Design 2.0 to Create High-Quality UI (Without AI Slop)",
+    "url": "https://dev.to/amani_moses_3166424e7ee1c/how-to-use-claude-design-20-to-create-high-quality-ui-without-ai-slop-4fo1",
+    "source": "DEV Community",
+    "summary": "&lt;h1&gt; Avoiding \"AI Slop\" in Design &lt;/h1&gt; &lt;p&gt;\"AI slop\" happens when you let artificial intelligence build everything all at once with zero guidance, resulting in generic, corporate-looking interfaces. By taking on the role of a creative director—providing specific style references, establishing a design system, and tweaking the output iteratively—you can steer AI toward un",
+    "tags": [
+      "design",
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscom2026stateofcssdevssurveys",
+    "title": "2026 State of CSS, Devs Surveys",
+    "url": "https://css-tricks.com/2026-state-of-css-devs-surveys/",
+    "source": "CSS-Tricks",
+    "summary": "Today, with CSS gap decorations fully supported in Chrome and Edge, starting with version 149, you can now very easily style gaps, and with a lot of control. Gap Decorations Are Now Available, Here’s What’s New originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "edge",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.254Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202608howbaselinecanhelpshiplessjavascript",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Most of us install a dependency once and never look at it again. It does its job, the tests pass, and we move on. But the web platform keeps moving too, and a surprising number of the libraries sitting in your package.json today are now built into the browser. In a typical mid-sized JavaScript app, you can often find somewhere between 60KB and 90KB (minified and gzipped) of dependencies that the p",
+    "tags": [
+      "javascript",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.453Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtodidiyanga745a1a37232125whystockbacktestingresultsdeviatethehiddenpitfallsofapitimestamphandling4o1e",
+    "title": "Why stock backtesting results deviate: The hidden pitfalls of API timestamp handling",
+    "url": "https://dev.to/didi_yang_a745a1a37232125/why-stock-backtesting-results-deviate-the-hidden-pitfalls-of-api-timestamp-handling-4o1e",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;When building and validating US stock quantitative strategies, I used to focus solely on core market data metrics. Like most individual quantitative developers, I prioritized the integrity of price candlesticks and trading volume data, assuming that complete K-line datasets would guarantee reliable backtesting outcomes that align with real-market performance.&lt;br&gt; This assumption hel",
+    "tags": [
+      "performance",
+      "ui",
+      "ia"
+    ],
+    "foundAt": "2026-08-10T07:06:33.618Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtojafubuildareactclientintakeformwithfileuploads5hmd",
+    "title": "Build a React client intake form with file uploads",
+    "url": "https://dev.to/jafu/build-a-react-client-intake-form-with-file-uploads-5hmd",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Client intake often requires two types of information: searchable answers and files for review. This Vite and React example collects both in the same response.&lt;/p&gt; &lt;p&gt;You can &lt;a href=\"https://jacobfunch.github.io/fillo-vite-client-intake-starter/\" rel=\"noopener noreferrer\"&gt;try the form&lt;/a&gt; without an account.&lt;/p&gt; &lt;h2&gt; Ask only what you need &l",
+    "tags": [
+      "react",
+      "search",
+      "ui"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogsecuritysupplychainsecurityhowwetookmalwareadvisoriesbeyondnpm",
+    "title": "How we took malware advisories beyond npm",
+    "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
+    "source": "The GitHub Blog",
+    "summary": "A compromised package can steal credentials the moment you install it, and until recently, GitHub could only flag those in npm. Not anymore. This is the story of how the supply chain engineering team behind Dependabot expanded malware advisories to eight ecosystems by building on OpenSSF&rsquo;s shared malicious packages data. Here&rsquo;s where things stand: earlier this year, Dependabot start",
+    "tags": [
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.913Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomusingandstylingthedialogelement",
+    "title": "Using and Styling the Dialog Element",
+    "url": "https://css-tricks.com/using-and-styling-the-dialog-element/",
+    "source": "CSS-Tricks",
+    "summary": "A few notes and takeaways from the 2026 State of CSS survey results, including a nice CSS-Tricks cameo! 2026 State of CSS, Devs Surveys originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ia"
+    ],
+    "foundAt": "2026-08-10T07:06:33.253Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtochtwilferintroductiontothecloudnativeworldwithazurekubernetesservicesaksseriespart23ce4",
+    "title": "Introduction to the Cloud-Native World with Azure Kubernetes Services (AKS) - Series Part 2",
+    "url": "https://dev.to/chtwilfer/introduction-to-the-cloud-native-world-with-azure-kubernetes-services-aks-series-part-2-3ce4",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Digital transformation has led companies to organize their infrastructure and development processes in entirely new ways. To address the challenges of modern cloud-native applications, concepts like &lt;strong&gt;Platform Engineering&lt;/strong&gt; are gaining increasing importance. Especially in environments using &lt;strong&gt;Azure Kubernetes Services (AKS)&lt;/strong&gt;, platform eng",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.618Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtogyu07aicpackagesneedaninterfaceforcodingagents562o",
+    "title": "AIC: Packages Need an Interface for Coding Agents",
+    "url": "https://dev.to/gyu07/aic-packages-need-an-interface-for-coding-agents-562o",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;I develop several tightly related repositories at the same time.&lt;/p&gt; &lt;p&gt;Some are reusable SDKs for declarative schemas, infrastructure, stateful workflows, and other domain abstractions. Others are applications that consume several of those SDKs together.&lt;/p&gt; &lt;p&gt;The development loop constantly crosses package boundaries.&lt;br&gt; &lt;/p&gt; &lt;div class=\"highl",
+    "tags": [
+      "ai",
+      "schema"
+    ],
+    "foundAt": "2026-08-10T07:06:33.618Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtomuskanbandtas3accessdeniedtroubleshootingeverycauseandhowtofixit202627a2",
+    "title": "S3 Access Denied Troubleshooting: Every Cause and How to Fix It (2026)",
+    "url": "https://dev.to/muskan_bandta/s3-access-denied-troubleshooting-every-cause-and-how-to-fix-it-2026-27a2",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;If you are staring at &lt;code&gt;An error occurred (AccessDenied) when calling the GetObject operation: Access Denied&lt;/code&gt;, this guide walks through every cause in the order you should check them, with the exact fix for each. I am a cloud associate and I debug this error often enough that I keep a mental checklist. Here it is, written down.&lt;/p&gt; &lt;h2&gt; Quick ans",
+    "tags": [
+      "ui",
+      "ia"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtosaketkumar566eba0ddf2bahackathononclimatewellbeing5h3j",
+    "title": "HACKATHON ON CLIMATE &amp; WELLBEING",
+    "url": "https://dev.to/saket_kumar_566eba0ddf2ba/hackathon-onclimate-wellbeing-5h3j",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Are you interested in leveraging AI, remote sensing, and data-driven solutions to tackle climate change and public health challenges?&lt;/p&gt; &lt;p&gt;The Climate &amp;amp; Wellbeing Hackathon—hosted by Nims University Rajasthan and the World Health Summit Academic Alliance in collaboration with Khushi Baby—is officially open for registrations!&lt;/p&gt; &lt;p&gt;🎯 About the Hackatho",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogengineeringturnonegiantaigeneratedpullrequesttoareviewablestack",
+    "title": "Turn one giant AI-generated pull request to a reviewable stack",
+    "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+    "source": "The GitHub Blog",
+    "summary": "Think about the last big feature you shipped. Be honest. Did you cram it into one giant pull request, or did you split it into smaller scoped pull requests? For years, you have silently had to decide between watching a pull request grow so large that reviewing it becomes a nightmare or breaking it into a chain of smaller pull requests that you have to babysit, sync by hand, and untangle conflicts",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.913Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoprowesssoftdesigningidempotentandobservableapiintegrationsinmulesoftaproductionreadyapproach99a",
+    "title": "Designing Idempotent and Observable API Integrations in MuleSoft: A Production-Ready Approach",
+    "url": "https://dev.to/prowesssoft/designing-idempotent-and-observable-api-integrations-in-mulesoft-a-production-ready-approach-99a",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;A MuleSoft integration can work perfectly during development and still behave unexpectedly in production.&lt;/p&gt; &lt;p&gt;The reason is simple: production systems are messy.&lt;/p&gt; &lt;p&gt;Connections drop. External applications respond slowly. Clients retry requests. Workers restart. A downstream system may complete an operation even though Mule never receives the response.&lt;/",
+    "tags": [
+      "design"
+    ],
+    "foundAt": "2026-08-10T07:06:33.618Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtokamenivanovthelombokillusionchapter556n",
+    "title": "The Lombok Illusion (Chapter 5)",
+    "url": "https://dev.to/kamenivanov/the-lombok-illusion-chapter-5-56n",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;You open a new Spring Boot project and you create a DTO, then an entity, and you’re staring at getters, setters, constructors, &lt;code&gt;equals()&lt;/code&gt;, &lt;code&gt;hashCode()&lt;/code&gt;, &lt;code&gt;toString()&lt;/code&gt;. Someone on the team suggests to put lombok’s &lt;code&gt;@Data&lt;/code&gt;, or “just slap &lt;code&gt;@Builder&lt;/code&gt; on it, it’ll be cleaner.” Fort",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtosakramennodesandnetworkshowblockchainsactuallystaydecentralized47l6",
+    "title": "Nodes and Networks: How Blockchains Actually Stay Decentralized",
+    "url": "https://dev.to/sakramen/nodes-and-networks-how-blockchains-actually-stay-decentralized-47l6",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;When someone says \"Bitcoin has over 15,000 nodes worldwide,\" they mean 15,000+ independent computers are each running Bitcoin software and each maintaining their own full copy of the blockchain. No server owns the truth. Every node checks it for itself.&lt;/p&gt; &lt;p&gt;That single fact — every node independently verifies every transaction and block against protocol rules — is the reas",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-10T07:06:33.619Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilotaguidetoslashcommandsinthegithubcopilotapp",
+    "title": "A guide to slash commands in the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+    "source": "The GitHub Blog",
+    "summary": "If you&rsquo;ve used slash commands in the GitHub Copilot CLI, you already know how powerful a quick / can be. In the GitHub Copilot app, slash commands take that idea further, giving you shortcuts for managing sessions, navigating projects, and customizing your Copilot workflow. What are slash commands? Slash commands are text shortcuts you type directly into the GitHub Copilot app&rsquo;s",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-10T07:06:33.913Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilothowthegithublegalteamusedcopilotclitostreamlinetheirworkflows",
+    "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
+    "source": "The GitHub Blog",
+    "summary": "Whether you are just starting out or are not in a technical role at all, you likely already have the skills you need to build your own tools. If you have ever thought &ldquo;I&rsquo;m not technical enough to build that,&rdquo; this post is for you. Let me introduce the team. We are lawyers, program managers, and business professionals&mdash;not engineers. A large part of our work is often repet",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-10T07:06:33.913Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607kirkiwordpressvisualbuilderinfinitecanvas",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/kirki-wordpress-visual-builder-infinite-canvas/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by Kirki For years, WordPress users have relied on traditional page builders to create websites without writing code. While these builders made web design more accessible, many still come with familiar compromises — rigid layouts, reliance on multiple third-party plugins, bloated code, and performance trade-offs that can slow down your site. Kirki takes a different appr",
+    "tags": [
+      "performance",
+      "design",
+      "ui",
+      "ia",
+      "wordpress"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607matchingaimodalityuserintentdesigningrightinterface",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/matching-ai-modality-user-intent-designing-right-interface/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "The design community has entered a period of conversational tunnel vision. Because Large Language Models (LLMs) are trained on dialogue, the industry has collectively decided that the chat bubble is the natural home for every AI capability. While the chat interface is a viable and powerful option for many tasks, it is one tool in an expansive toolkit. UX and Product teams must be intentional about",
+    "tags": [
+      "design",
+      "ux",
+      "ia",
+      "ai",
+      "llm"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605databackedtruthsuserexperienceroi",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In the high-stakes economy of today, the cost of a friction-heavy interface is no longer just “lost clicks”, but potentially millions in wasted engineering spend and lost business value. As a veteran UX designer who has helped build digital products since the early mobile-first era, I’ve watched business leaders shift from viewing design as a “cosmetic preference” to recognising that user experien",
+    "tags": [
+      "design",
+      "ux",
+      "ui",
+      "ia",
+      "mobile"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607digitaldesignaiera",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/digital-design-ai-era/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by MacPaw The phrase “artificial intelligence” has many excited, especially those in tech. But for those of us in creative fields like digital art and design, AI can be more concerning than it is exciting. AI-generated art, videos, and images have flooded the internet, raising questions about whether more companies will turn to tools like OpenAI’s Dall-E, Midjourney, Le",
+    "tags": [
+      "design",
+      "image",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606howmakedesignsystemaiready",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/how-make-design-system-ai-ready/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "AI-generated prototypes often don't deliver consistently decent results because of tiny inconsistencies scattered all across a design system. I's decisions made but not documented, hard-coded values never cleaned up, or relying too much on AI making sense of mock-ups or design flows on its own. Yesterday I stumbled upon a useful practical guide by Hardik Pandya from Atlassian — on how to reduce dr",
+    "tags": [
+      "design",
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604productionreadybecomesdesigndeliverableux",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/production-ready-becomes-design-deliverable-ux/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In early 2026, I noticed that the UX designer’s toolkit seemed to shift overnight. The industry standard “Should designers code?” debate was abruptly settled by the market, not through a consensus of our craft, but through the brute force of job requirements. If you browse LinkedIn today, you’ll notice a stark change: UX roles increasingly demand AI-augmented development, technical orchestration,",
+    "tags": [
+      "design",
+      "ux",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202603animemarveldcdesigningdigitalproductsemotionflow",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/03/anime-marvel-dc-designing-digital-products-emotion-flow/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Design isn’t only pixels and patterns. It’s pacing and feelings, too. Some products feel cinematic as they guide us through uncertainty, relief, confidence, and calm without yanking us around. That’s Emotion in Flow. Others undercut their own moments with a joke in the wrong place, a surprise pop-up, or a jumpy transition. That’s Emotion in Conflict. These aren’t UX-only ideas. You can see them ev",
+    "tags": [
+      "design",
+      "ux",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilotgithubcopilotappforbeginnersgettingstarted",
+    "title": "GitHub Copilot app for Beginners: Getting started",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+    "source": "The GitHub Blog",
+    "summary": "AI coding tools often begin with a chat window. While that works for quick questions or generating code, real software development rarely happens in a straight line. One minute you&rsquo;re fixing a bug, the next you&rsquo;re reviewing a pull request, digging into an unfamiliar part of the codebase, or exploring a new idea. The GitHub Copilot app is designed for that kind of workflow. Instead o",
+    "tags": [
+      "design",
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogbuildaipoweredappsopenllmvultrgpu",
+    "title": "Build AI-powered applications using OpenLLM and Vultr Cloud GPU",
+    "url": "https://developer.mozilla.org/en-US/blog/build-ai-powered-apps-openllm-vultr-gpu/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ui",
+      "ai",
+      "llm"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacfunctionsttranslate",
+    "title": "translate()",
+    "url": "https://css-tricks.com/almanac/functions/t/translate/",
+    "source": "CSS-Tricks",
+    "summary": "Sometimes designers have silly ideas that eventually grow on you. That happened to me with this concept where I had to build columns of items moving in opposite directions when a user scrolls the page. CodePen Embed Fallback Note: This &#8230; Using Scroll-Driven Animations for Opposing Scroll Directions originally handwritten and published with love on CSS-Tricks. You should really get the newsl",
+    "tags": [
+      "css",
+      "design",
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomcssscrolltriggeredanimationsfirstlook",
+    "title": "A First Look at Scroll-Triggered Animations",
+    "url": "https://css-tricks.com/css-scroll-triggered-animations-first-look/",
+    "source": "CSS-Tricks",
+    "summary": "There's a brand new ariaNotify() method — defined by the WAI-ARIA 1.3 Specification — that provides a means of programmatically triggering narration in a screen reader. The Siren Song of ariaNotify() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607whenmakessenseblockmainthread",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/when-makes-sense-block-main-thread/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "We’ve all heard of the sacred rule in modern web development, the rule never to be broken. The rule of “Never block the main thread.” You almost can’t miss it as a web developer; it’s in almost every performance guide, and to be fair, it is good advice. We all know the browser’s main thread is single-threaded, meaning it can only do one thing at a time. Plus, as we know, the main thread isn’t ours",
+    "tags": [
+      "performance",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606desktopwallpapercalendarsjuly2026",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/desktop-wallpaper-calendars-july-2026/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "The scent of rain after a hot day, watching the moon rise on a summer night’s sky, or going for a swim in a nearby lake — July is full of small, distinctive moments that can quietly spark new inspiration. So, why not bring a bit of that summer joy to your desktop, too, this month? For this post, artists and designers from across the globe once again tickled their creativity and designed desktop w",
+    "tags": [
+      "design",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605buildingselfcorrectingcolorsystemscontrastcolor",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "The HTTP Archive Web Almanac has been tracking color contrast failures for years. The numbers have barely moved. After half a decade of design system tooling, accessibility linters, and entire JavaScript libraries dedicated to computing readable text colors, 70% of websites still fail basic WCAG contrast checks in 2025. The WebAIM Million paints an even grimmer picture — 83.9% of homepages flagged",
+    "tags": [
+      "javascript",
+      "design",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604bugfreeworkforceaidisruptingteams",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Through many discussions with industry colleagues, we’ve started hearing a phrase more often when swapping stories about AI adoption: “Now I don’t have to bug [someone].” Product designers don’t need to bug researchers anymore — retrieval-augment generation (RAG) tools surface insights instantly. Product Managers don’t need to bug designers for mockups — AI generates acceptable options. Engineers",
+    "tags": [
+      "search",
+      "design",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604identifyingnecessarytransparencymomentsagenticaipart1",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/identifying-necessary-transparency-moments-agentic-ai-part1/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Designing for autonomous agents presents a unique frustration. We hand a complex task to an AI, it vanishes for 30 seconds (or 30 minutes), and then it returns with a result. We stare at the screen. Did it work? Did it hallucinate? Did it check the compliance database or skip that step? We typically respond to this anxiety with one of two extremes. We either keep the system a Black Box, hiding eve",
+    "tags": [
+      "design",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604practicalguidedesignprinciples",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/practical-guide-design-principles/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "We often see design principles as rigid guidelines that dictate design decisions. But actually, they are an incredible tool to rally the team around a shared purpose and document the values and beliefs that an organization embodies. They align teams and inform decision-making. They also keep us afloat amidst all the hype, big assumptions, desire for faster delivery, and AI workslop. But how do we",
+    "tags": [
+      "design",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtopeterndumiapdfhaulibuiltanmcpserversoaiassistantscanprocesspdfsdirectly80k",
+    "title": "I Built an MCP Server So AI Assistants Can Process PDFs Directly",
+    "url": "https://dev.to/peter_ndumia_pdfhaul/i-built-an-mcp-server-so-ai-assistants-can-process-pdfs-directly-80k",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;I run PDFHaul, a free browser and mobile PDF toolkit, as a solo founder. A few months ago I kept running into the same friction point: every time I wanted an AI assistant to help with a PDF task, I had to manually download the file, upload it somewhere, run the tool, then feed the result back into the conversation. For anything involving more than one file, that loop got old fast.&lt;/p&g",
+    "tags": [
+      "ui",
+      "ai",
+      "mobile"
+    ],
+    "foundAt": "2026-08-03T19:44:37.274Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtohaichiops861a9ec315b1e7howibuilta2agentcodereviewloopforlocalollamaworkflowsle2",
+    "title": "How I built a 2-agent code review loop for local Ollama workflows",
+    "url": "https://dev.to/haichi_ops_861a9ec315b1e7/how-i-built-a-2-agent-code-review-loop-for-local-ollama-workflows-le2",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;When running code reviews with local LLMs, a single model can either hallucinate non-existent bugs or generate generic advice you end up ignoring.&lt;/p&gt; &lt;p&gt;To make local AI code review more useful, I built a closed &lt;strong&gt;Reviewer vs. Verifier&lt;/strong&gt; loop for local Ollama workflows.&lt;/p&gt; &lt;h2&gt; The Architecture: Two Local Agents, One Loop &lt",
+    "tags": [
+      "ui",
+      "ai",
+      "llm"
+    ],
+    "foundAt": "2026-08-03T19:44:37.275Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtomastrosgeppettoseverywaytoexportlinkedinandsalesnavigatordataandwheneachoneactuallyworks35dp",
+    "title": "Every Way to Export LinkedIn and Sales Navigator Data (and When Each One Actually Works)",
+    "url": "https://dev.to/mastrosgeppettos/every-way-to-export-linkedin-and-sales-navigator-data-and-when-each-one-actually-works-35dp",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;A few months back I was running Sales Navigator searches for a client project — filtering down to \"VP Sales, fintech, based in Italy or Spain\" type lists — and the results were genuinely good. 60, 80 leads that actually matched. Then I hit the part nobody warns you about: there's no button on that page that says \"save this.\"&lt;/p&gt; &lt;p&gt;So I did what everyone does. Opened a spread",
+    "tags": [
+      "search",
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.275Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogsecuritysupplychainsecuritydisruptingsupplychainattacksonnpmandgithubactions",
+    "title": "Disrupting supply chain attacks on npm and GitHub Actions",
+    "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
+    "source": "The GitHub Blog",
+    "summary": "In the past year, there&rsquo;s been a pattern of supply chain attacks that target weaknesses in package repositories and CI/CD systems to quickly spread malware to hundreds of open source projects. This malware seeks to exfiltrate credentials both to broadly spread the attack, as well as for later exploitation. We&rsquo;ve written a few times about our plans for hardening the supply chain: Our",
+    "tags": [
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogsecuritysupplychainsecuritythecaseforacooldownwhydependabotnowwaitsbeforeissuingversionupdates",
+    "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+    "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+    "source": "The GitHub Blog",
+    "summary": "In September 2025, an attacker phished the credentials of a single npm maintainer and published booby-trapped versions of chalk, debug, and around a dozen other packages that are together downloaded more than 2 billion times a week. The code rewrote cryptocurrency wallet addresses inside any browser app that loaded it. The poisoned versions were live for roughly two hours before the community caug",
+    "tags": [
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilotcopilotvsrawapiaccesswhatareyouactuallypayingfor",
+    "title": "Copilot vs. raw API access: What are you actually paying for?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+    "source": "The GitHub Blog",
+    "summary": "I keep seeing this question: &ldquo;Why would I pay for GitHub Copilot when I can call the same models through an API?&rdquo; It&rsquo;s a fair question. The answer depends on what work you need to own. Are you building a product feature with your own prompts, retrieval, routing, logs, security model, and billing controls? Or are you trying to get from a GitHub Issue to a reviewed pull reque",
+    "tags": [
+      "ui",
+      "security",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogviewtransitionsbeginnerguide",
+    "title": "A beginner-friendly guide to view transitions in CSS",
+    "url": "https://developer.mozilla.org/en-US/blog/view-transitions-beginner-guide/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css",
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogfiximagelcp",
+    "title": "Fix your website&apos;s Largest Contentful Paint by optimizing image loading",
+    "url": "https://developer.mozilla.org/en-US/blog/fix-image-lcp/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "image",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": true
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogfixjavascriptperformance",
+    "title": "Fixing your website&apos;s JavaScript performance",
+    "url": "https://developer.mozilla.org/en-US/blog/fix-javascript-performance/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript",
+      "performance"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogstaticsitegenerationwithnextjs",
+    "title": "Static Site Generation (SSG) with Next.js",
+    "url": "https://developer.mozilla.org/en-US/blog/static-site-generation-with-nextjs/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "next.js",
+      "ssg"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogborderimagesinterop2023",
+    "title": "Border images in CSS: A key focus area for Interop 2023",
+    "url": "https://developer.mozilla.org/en-US/blog/border-images-interop-2023/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css",
+      "image"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusbloglearnjavascriptconsolemethods",
+    "title": "Developer essentials: JavaScript console methods",
+    "url": "https://developer.mozilla.org/en-US/blog/learn-javascript-console-methods/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusbloggettingstartedwithcsscontainerqueries",
+    "title": "Getting started with CSS container queries",
+    "url": "https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogsearchingcodewithgrep",
+    "title": "Developer essentials: How to search code using grep",
+    "url": "https://developer.mozilla.org/en-US/blog/searching-code-with-grep/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "search",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogmdndocsjune2023",
+    "title": "MDN doc updates: CSS selectors &amp; media queries, WebGPU &amp; WebTransport APIs, Progressive web apps",
+    "url": "https://developer.mozilla.org/en-US/blog/mdn-docs-june-2023/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscom",
+    "title": "CSS-Tricks",
+    "url": "https://css-tricks.com",
+    "source": "CSS-Tricks",
+    "summary": "A learning community for front-end designers and developers",
+    "tags": [
+      "css",
+      "design"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomcssgapdecorationsnowavailable",
+    "title": "Gap Decorations Are Now Available, Here’s What’s New",
+    "url": "https://css-tricks.com/css-gap-decorations-now-available/",
+    "source": "CSS-Tricks",
+    "summary": "We recently got the shape() function and corner-shape property. What else could we possibly need as far as making shapes in CSS? Let me tell you: the border-shape property! Get Ready For the Powerful CSS border-shape Property! originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomgetreadyforthepowerfulcssbordershapeproperty",
+    "title": "Get Ready For the Powerful CSS border-shape Property!",
+    "url": "https://css-tricks.com/get-ready-for-the-powerful-css-border-shape-property/",
+    "source": "CSS-Tricks",
+    "summary": "The soon-Baseline sibling-index() function for animations, CSS and the 2026 FIFA World Cup, use cases for the infinity keyword, container \"stuck\" queries, and more. What’s !important #16: sibling-index() Animations, Use Cases for the infinity Keyword, Container Stuck Queries, and More originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomwhatsimportant16",
+    "title": "What’s !important #16: sibling-index() Animations, Use Cases for the infinity Keyword, Container Stuck Queries, and More",
+    "url": "https://css-tricks.com/whats-important-16/",
+    "source": "CSS-Tricks",
+    "summary": "The writing-mode CSS property sets whether lines of text are laid out horizontally or vertically, and the direction in which blocks and lines progress. .element { writing-mode: vertical-rl; } This is most useful in languages such as Chinese, Japanese or &#8230; writing-mode originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacpropertiesppointerevents",
+    "title": "pointer-events",
+    "url": "https://css-tricks.com/almanac/properties/p/pointer-events/",
+    "source": "CSS-Tricks",
+    "summary": "Read all about boundary-aware CSS, accessible grid lanes, time-based web designs, full-bleed, the customizable select, and new web platform features. What’s !important #15: Boundary-aware CSS, Time-based CSS, Full-bleed CSS, and More originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "design"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomwhatsimportant14",
+    "title": "What’s !important #14: Gap Decorations, random(), &#060;select&gt; field-sizing, and More",
+    "url": "https://css-tricks.com/whats-important-14/",
+    "source": "CSS-Tricks",
+    "summary": "CSS has always had pseudo-classes that style things based on user interactions. Recent features, however, are blurring the line between what CSS \"listens\" for and how they are alternatives to what Javascript typically listens for. The Shifting Line Between CSS States and JavaScript Events originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]",
+    "tags": [
+      "javascript",
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomcssstatesandjavascriptevents",
+    "title": "The Shifting Line Between CSS States and JavaScript Events",
+    "url": "https://css-tricks.com/css-states-and-javascript-events/",
+    "source": "CSS-Tricks",
+    "summary": "The translateZ() function moves an element closer to or farther from the user. translateZ() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "javascript",
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607bullandbearcasedigitaldesignageai",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Designers have spent years saying they would do better work if the organisation got out of the way. Not always in those exact words, obviously. It usually comes out as something more reasonable: we didn’t get enough engineering time, product had already decided the solution, the roadmap was too packed, leadership only cared about this quarter’s numbers, research got cut, the experiment was never r",
+    "tags": [
+      "search",
+      "design"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607howturnbrandstrategyintovisualdirection",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/how-turn-brand-strategy-into-visual-direction/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "When a branding project fails, it usually happens long before the logo stage: in the strategy phase, when words like “modern,” “trustworthy,” “premium,” “friendly,” and “disruptive” are left undefined. The result is a gap between what the brand is supposed to communicate and what the designer is expected to create. This is the space I like to call the “pre-concept” phase. At the beginning of a pro",
+    "tags": [
+      "design",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607designingdistressedusersmentalhealthappsui",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/designing-distressed-users-mental-health-apps-ui/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Mental health applications keep facing a continuing, measurable crisis: many people stop using them quickly. The data is stark: almost 95% of users who open the app on day 1 abandon the app by day 30, with a median 30-day retention of only 3.3%. Even the recognised mental health giants lose around 50% of their users within the first ten days. This severe engagement loss and retention collapse are",
+    "tags": [
+      "ui",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606whyaccessibilityoperationalcapabilitynotfeature",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/why-accessibility-operational-capability-not-feature/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by Level Access We know that right now, a senior engineer is shipping a checkout flow they “built” in a single afternoon. AI assistant does the heavy lifting, happy path runs clean, and a rotating chevron spins on the order summary. Two weeks later, engineering gets a notice from customer support: a blind customer using a screen reader can’t complete the purchase becaus",
+    "tags": [
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606designinguncertaintyhowaisuperchargesprobabilisticthinking",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In 2024, an Air Canada customer asked a chatbot about bereavement fares. The bot confidently gave him a refund policy that didn’t exist. The airline refused to honor it. A tribunal ruled in the customer’s favor. The bot hadn't decided anything; it had predicted an answer based on patterns in its training data. The company treated that prediction as policy. This is the risk at the heart of designin",
+    "tags": [
+      "design",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606benefitscognitiveinclusionuxresearch",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/benefits-cognitive-inclusion-ux-research/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In the summer of 2024, I became co-chair of a working group of expert researchers who came together to determine how best to perform accessibility testing with people with cognitive disabilities. This was work I did for Fable, where I am currently VP of Innovation. Cognitive disability is an umbrella term for several disabilities that impact how people process information, and it usually affects m",
+    "tags": [
+      "search",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605fourlevelscustomerunderstanding",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/four-levels-customer-understanding/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Many companies think they know fairly well what their users want and need, and how they make their decisions. Yet most of the time these are merely big assumptions and big hunches — with little real evidence to support them. In practice, obvious reasons might be true, but they rarely paint the full picture. To understand our customers, we must triangulate across four levels of customer understandi",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605mathematicallayoutssiblingindexsiblingcount",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "You know that thing where you have a grid of cards, and you want them to fade in one after another? That staggered cascade effect. Looks great. Should be simple. And yet every time I’ve built it, the implementation has made me feel like I’m doing something fundamentally stupid. What’s Coming The current spec only counts all element siblings. But the CSSWG has documented a planned extension in iss",
+    "tags": [
+      "css",
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604sessiontimeoutsaccessibilitybarrierauthenticationdesign",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/session-timeouts-accessibility-barrier-authentication-design/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "For web professionals, session management is a balancing act between user experience, cybersecurity, and resource usage. For people with disabilities, it is more than that — it is a barrier to buying digital tickets, scrolling on social media, or applying for a loan online. Session timeout accessibility can be the difference between a bad day and a good day for those with disabilities. For many, g",
+    "tags": [
+      "security",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604legacysystems",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/legacy-systems/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Imagine that you need to improve the UX of a legacy system. A system that has been silently working in the background for almost a decade. It’s slow, half-broken, unreliable, and severely outdated — a sort of “black box” that everyone relies upon, but nobody really knows what’s happening under the hood. Where would you even start? Legacy stories are often daunting, adventurous, and utterly confusi",
+    "tags": [
+      "ux",
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202603sitesearchparadoxwhybigboxalwayswins",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/03/site-search-paradox-why-big-box-always-wins/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In the early days of the web, the search bar was a luxury, added to a site once it became “too big” to navigate by clicking. We treated it like an index at the back of a book: a literal, alphabetical list of words that pointed to specific pages. If you typed the exact word the author used, you found what you needed. If you didn’t, you were met with a “0 Results Found” screen that felt like a digit",
+    "tags": [
+      "search",
+      "ux"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtopycanistitlesuggestionigotofferedaweb3jobonlinkedinthecodebasewasbuilttorobmee59",
+    "title": "I got offered a Web3 job on LinkedIn. The \"codebase\" was built to rob me.",
+    "url": "https://dev.to/pycanis/title-suggestion-i-got-offered-a-web3-job-on-linkedin-the-codebase-was-built-to-rob-me-e59",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;A stranger messaged me on LinkedIn about a job in the Web3 space. Friendly, low pressure, said it sounded like a good fit. To show me what the team was building, they shared a private GitHub repository and asked me to spend \"15 to 30 minutes running it and looking around\" to see whether the project made sense to me.&lt;/p&gt; &lt;p&gt;That repository was not a job assessment. It was a tr",
+    "tags": [
+      "ui",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.274Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtosybilgambleyyuaneditablerangecanchangewithoutchangingwordtext532o",
+    "title": "An editable range can change without changing Word text",
+    "url": "https://dev.to/sybilgambleyyu/an-editable-range-can-change-without-changing-word-text-532o",
+    "source": "DEV Community",
+    "summary": "&lt;h1&gt; An editable range can change without changing Word text &lt;/h1&gt; &lt;p&gt;A Word document can store an editable-range marker around text and associate&lt;br&gt; that marker with an individual editor. The covered text can remain exactly the&lt;br&gt; same while the stored editor assignment changes. Text-only review sees no&lt;br&gt; change, while package-level review can repo",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.274Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtovinoderramsetty191b3e057productionissueseveryspringbootdevelopershouldlearnbeforebecomingsenior1nk5",
+    "title": "7 Production Issues Every Spring Boot Developer Should Learn Before Becoming Senior",
+    "url": "https://dev.to/vinod_erramsetty_191b3e05/7-production-issues-every-spring-boot-developer-should-learn-before-becoming-senior-1nk5",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;After working on enterprise applications and distributed microservices, I have realized that the biggest challenges rarely come from writing business logic. They come from handling production traffic, failures, concurrency, and unexpected edge cases.&lt;/p&gt; &lt;p&gt;Here are seven lessons that every Spring Boot developer should know before calling themselves a senior engineer.&lt;/p&g",
+    "tags": [
+      "edge",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.275Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblog",
+    "title": "The GitHub Blog",
+    "url": "https://github.blog/",
+    "source": "The GitHub Blog",
+    "summary": "Updates, ideas, and inspiration from GitHub to help developers build and design software.",
+    "tags": [
+      "design",
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogengineeringarchitectureoptimizationdontstopearlycasefoldingsourcecodeatmemoryspeed",
+    "title": "Don&#8217;t stop early: Case-folding source code at memory speed",
+    "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+    "source": "The GitHub Blog",
+    "summary": "Suppose a user searches for caf&eacute; and your corpus contains CAF&Eacute;, or they type stra&szlig;e and you&rsquo;ve stored STRASSE. To make these count as matches, you need a canonical form that erases case distinctions, so that two strings which differ only in case compare equal. That form is case folding, and it shows up wherever text is matched rather than displayed: search engines, regex",
+    "tags": [
+      "search",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilotstackedsessionsandpullrequestsinthegithubcopilotapp",
+    "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
+    "source": "The GitHub Blog",
+    "summary": "I want you to look at this screenshot for a moment from the GitHub Copilot app. It&rsquo;s a small one, it&rsquo;s got a lot of icons, and it tells the most glorious story that I&rsquo;m really excited about. This image is a set of stacked sessions. They&rsquo;re a series of tasks in the same repository, where each session builds off each other! More on those below, but first, why is thi",
+    "tags": [
+      "ui",
+      "image"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogsecuritysupplychainsecuritytamedependabotgroupyourupdatesslowthecadencekeepsecurityfast",
+    "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
+    "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
+    "source": "The GitHub Blog",
+    "summary": "If you maintain an active repository, you know the feeling. You open your notifications on a Monday morning and there they are: five, 10, sometimes a dozen Dependabot pull requests, each bumping a single dependency by a single patch version. Individually, every one of them is helpful. Collectively, they&rsquo;re noise. And noise is how important updates get ignored. We looked at Microsoft&rsquo",
+    "tags": [
+      "security",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilottheharnessisallyouneedmostly",
+    "title": "The harness is all you need (mostly)",
+    "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+    "source": "The GitHub Blog",
+    "summary": "If you&rsquo;re feeling overwhelmed by AI right now, you&rsquo;re not alone. Every day it seems there is a new tool, new MCP, new model, new skill, new workflow, new feature, new social post that is some form of &ldquo;Hey look! I have completely figured out AI with this one weird prompt.&rdquo; I&hellip;don&rsquo;t believe you. I work with AI every single day, and what I&rsquo;m finding",
+    "tags": [
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogsecuritynextchapterrestructuringgithubsbugbountyprogram",
+    "title": "Next chapter: Restructuring GitHub&#8217;s bug bounty program",
+    "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+    "source": "The GitHub Blog",
+    "summary": "The security research community makes GitHub safer for everyone. That&rsquo;s the simple idea behind our bug bounty program. For more than a decade, researchers from around the world have helped us find and fix vulnerabilities before they could be exploited, and we&rsquo;ve worked hard to be a program worth their time. Today, we&rsquo;re sharing some meaningful changes to how the program wor",
+    "tags": [
+      "search",
+      "security"
+    ],
+    "foundAt": "2026-08-03T19:44:37.583Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblog",
+    "title": "MDN Blog",
+    "url": "https://developer.mozilla.org/en-US/blog/",
+    "source": "MDN Blog",
+    "summary": "The MDN Web Docs blog publishes articles about web development, open source software, web platform updates, tutorials, changes and updates to MDN, and more.",
+    "tags": [
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:36.375Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogimageformatscodecscompressiontools",
+    "title": "Image formats: Codecs and compression tools",
+    "url": "https://developer.mozilla.org/en-US/blog/image-formats-codecs-compression-tools/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "image"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogimageformatspixelsgraphics",
+    "title": "Image formats: Pixel data from encoders to decoders",
+    "url": "https://developer.mozilla.org/en-US/blog/image-formats-pixels-graphics/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "image"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogcolormodelshumansdevices",
+    "title": "Image formats: Color models for humans and devices",
+    "url": "https://developer.mozilla.org/en-US/blog/color-models-humans-devices/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "image"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogjavascripttemporaliscoming",
+    "title": "JavaScript Temporal is coming",
+    "url": "https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogdailyholidayjavascriptchallenges",
+    "title": "Countdown to the holidays with daily coding challenges",
+    "url": "https://developer.mozilla.org/en-US/blog/daily-holiday-javascript-challenges/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogoptimizewebperformance",
+    "title": "Monitoring and optimizing website performance",
+    "url": "https://developer.mozilla.org/en-US/blog/optimize-web-performance/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "performance"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogjavascriptintlsegmenteri18n",
+    "title": "Locale-sensitive text segmentation in JavaScript with Intl.Segmenter",
+    "url": "https://developer.mozilla.org/en-US/blog/javascript-intl-segmenter-i18n/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogdebugmobileappsacrossdevices",
+    "title": "How to debug mobile apps across devices",
+    "url": "https://developer.mozilla.org/en-US/blog/debug-mobile-apps-across-devices/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "mobile"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusbloghtmldetailsexclusiveaccordions",
+    "title": "Exclusive accordions using the HTML details element",
+    "url": "https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogjavascriptsetmethods",
+    "title": "New JavaScript Set methods",
+    "url": "https://developer.mozilla.org/en-US/blog/javascript-set-methods/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogtestjavascriptwithjestonvultr",
+    "title": "Testing JavaScript with Jest on Vultr",
+    "url": "https://developer.mozilla.org/en-US/blog/test-javascript-with-jest-on-vultr/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.379Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogcolorpalettescsscolormix",
+    "title": "Creating color palettes with the CSS color-mix() function",
+    "url": "https://developer.mozilla.org/en-US/blog/color-palettes-css-color-mix/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogintroductiontowebsustainability",
+    "title": "Introduction to web sustainability",
+    "url": "https://developer.mozilla.org/en-US/blog/introduction-to-web-sustainability/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogmigratingfromgithubtogitlabseamlesslyastepbystepguide",
+    "title": "Migrating from GitHub to GitLab seamlessly: A step-by-step guide",
+    "url": "https://developer.mozilla.org/en-US/blog/migrating-from-github-to-gitlab-seamlessly-a-step-by-step-guide/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogcustomeasingincsswithlinear",
+    "title": "Creating custom easing effects in CSS animations using the linear() function",
+    "url": "https://developer.mozilla.org/en-US/blog/custom-easing-in-css-with-linear/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogscrollprogressanimationsincss",
+    "title": "Scroll progress animations in CSS",
+    "url": "https://developer.mozilla.org/en-US/blog/scroll-progress-animations-in-css/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogaiexplainpostmortem",
+    "title": "Reflections on AI Explain: A postmortem",
+    "url": "https://developer.mozilla.org/en-US/blog/ai-explain-postmortem/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogintroducingaihelp",
+    "title": "Introducing AI Help (Beta): Your Companion for Web Development",
+    "url": "https://developer.mozilla.org/en-US/blog/introducing-ai-help/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusbloglearncsshuescolorshsl",
+    "title": "Learn how to use hue in CSS colors with HSL",
+    "url": "https://developer.mozilla.org/en-US/blog/learn-css-hues-colors-hsl/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogjavascriptshapedrawingfunction",
+    "title": "How to draw any regular shape with just one JavaScript function",
+    "url": "https://developer.mozilla.org/en-US/blog/javascript-shape-drawing-function/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogregularexpressionsreferenceupdates",
+    "title": "New reference pages on MDN for JavaScript regular expressions",
+    "url": "https://developer.mozilla.org/en-US/blog/regular-expressions-reference-updates/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "javascript"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogcssnotpseudomultipleselectors",
+    "title": "How :not() chains multiple selectors",
+    "url": "https://developer.mozilla.org/en-US/blog/css-not-pseudo-multiple-selectors/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevelopermozillaorgenusblogcsscolormodulelevel4",
+    "title": "New functions, gradients, and hues in CSS colors (Level 4)",
+    "url": "https://developer.mozilla.org/en-US/blog/css-color-module-level-4/",
+    "source": "MDN Blog",
+    "summary": "",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.380Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacpropertieswwritingmode",
+    "title": "writing-mode",
+    "url": "https://css-tricks.com/almanac/properties/w/writing-mode/",
+    "source": "CSS-Tricks",
+    "summary": "The pointer-events property controls whether an element can become the target of pointer events like clicks, hover states, and other pointer-based events. In other words, it lets you decide whether the browser should treat an element as interactive when the &#8230; pointer-events originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomwhatsimportant15",
+    "title": "What’s !important #15: Boundary-aware CSS, Time-based CSS, Full-bleed CSS, and More",
+    "url": "https://css-tricks.com/whats-important-15/",
+    "source": "CSS-Tricks",
+    "summary": "I know you’re busy, so for What’s !important #14, I’ll be sprinting through what’s been a stacked couple of weeks despite few browser updates. From CSS Quake to CSS Gap Decorations, this isn’t one to miss! What’s !important #14: Gap Decorations, random(), &lt;select&gt; field-sizing, and More originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as wel",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacfunctionsttranslatez",
+    "title": "translateZ()",
+    "url": "https://css-tricks.com/almanac/functions/t/translatez/",
+    "source": "CSS-Tricks",
+    "summary": "The translateY() function shifts an element vertically by the specified amount. translateY() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacfunctionsttranslatey",
+    "title": "translateY()",
+    "url": "https://css-tricks.com/almanac/functions/t/translatey/",
+    "source": "CSS-Tricks",
+    "summary": "The translateX() function shifts an element horizontally by the specified amount. translateX() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomalmanacfunctionsttranslatex",
+    "title": "translateX()",
+    "url": "https://css-tricks.com/almanac/functions/t/translatex/",
+    "source": "CSS-Tricks",
+    "summary": "The CSS translate() function shifts an element from its default position on a 2-dimensional plane translate() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomscrolldrivenanimationsopposingscrolldirections",
+    "title": "Using Scroll-Driven Animations for Opposing Scroll Directions",
+    "url": "https://css-tricks.com/scroll-driven-animations-opposing-scroll-directions/",
+    "source": "CSS-Tricks",
+    "summary": "Let's poke at the differences between scroll-driven and scroll-triggered animations. A First Look at Scroll-Triggered Animations originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomthesirensongofarianotify",
+    "title": "The Siren Song of ariaNotify()",
+    "url": "https://css-tricks.com/the-siren-song-of-arianotify/",
+    "source": "CSS-Tricks",
+    "summary": "",
+    "tags": [
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:36.945Z",
+    "used": false
+  },
+  {
+    "id": "httpswwwsmashingmagazinecom",
+    "title": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "url": "https://www.smashingmagazine.com/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Recent content in Articles on Smashing Magazine — For Web Designers And Developers",
+    "tags": [
+      "design"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607desktopwallpapercalendarsaugust2026",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/desktop-wallpaper-calendars-august-2026/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Everybody loves a beautiful wallpaper to freshen up their desktops and home screens, right? To provide you with inspiring designs on a regular basis, we started our monthly wallpapers series more than 15 years ago, and from the very beginning to today, artists and designers from across the globe have tickled their creativity and contributed their artworks to it. This August is no exception, of co",
+    "tags": [
+      "design"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607weaponizingdefendingreactflightprotocol",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/weaponizing-defending-react-flight-protocol/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "React Server Components don’t send HTML to your browser. They don’t send JSON either. When a server component renders, what actually travels over the wire is a custom streaming protocol called Flight. It’s a line-delimited format with its own type system, its own reference resolution, and its own rules for reconstructing executable behavior on the client. Most React developers have never opened th",
+    "tags": [
+      "react"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607peopledontwantmoreai",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/people-dont-want-more-ai/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Many companies silently assume that everybody wants more AI in their lives. That people are craving new AI features, new AI products, new AI workflows — that would all magically replace all existing outdated practices and broken ways of working. But in reality, it seems like people don’t want more AI at all — at least not in the way most AI leaders envision it. Unsurprisingly, many AI features hav",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202607usersdontneedmoretoolsneedseamlessintegrations",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/07/users-dont-need-more-tools-need-seamless-integrations/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "We often hear about shiny new tools that change everything (yet again). But in practice, most people don’t need more tools to deal with in their daily lives. What we actually need are better integrations of useful capabilities that neatly align with our existing and established mental models. Users don’t get excited about shiny new “smart” workflows, or navigating Terminal commands, or jumping bet",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202606impacthumanoidrobotshumanity",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/06/impact-humanoid-robots-humanity/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "For decades, science fiction has cushioned us with the idea that the “android revolution” was a distant fantasy. But the reality is unfolding rapidly. As the line between human and machine blurs, we are forced to confront an impending psychological, economic, and existential shift. I recently felt very disturbed after watching a YouTube video showcasing a humanoid robot that looked and acted with",
+    "tags": [
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:37.114Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605desktopwallpapercalendarsjune2026",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers serie",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605prototypeusersfixprotopie",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product",
+    "tags": [
+      "ia"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605practicalinterfacepatternsaitransparency",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "In the first part of this series, we talked about the Decision Node Audit. We mapped out the internal workings of our AI system to pinpoint the exact moments it makes decisions based on probabilities. This told us when the system needs to be transparent with the user. Now, the big question is how to share that information. You’ve got your Transparency Matrix ready. You know which behind-the-scenes",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605architecturelocalfirstwebdevelopment",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/architecture-local-first-web-development/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Last October, I was sitting in a hotel room in Lisbon, the night before I was supposed to demo a project management tool my team had spent four months building. The hotel Wi-Fi was doing that thing where it connects but nothing actually loads. And I watched our app, this thing I was genuinely proud of, render a blank screen with a spinner. Then a timeout error. Then nothing. I pulled out my phone,",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605rethinkingexperiencesystemtools",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by MacPaw Your grandmother’s vacuum was a trusty but ugly workhorse hidden in a dark closet. Dyson turned that practical tool into an aspirational product, one you love leaving out even when guests come over. Dish soap was just dish soap until Method put it in a glass container, and it became an addition to, not a distraction from, the aesthetics of your kitchen. Physic",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-03T19:44:37.115Z",
+    "used": false
+  }
+]
