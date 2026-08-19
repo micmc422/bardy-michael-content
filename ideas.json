@@ -1,5 +1,398 @@
 [
   {
+    "id": "httpscsstrickscomdarkmodetogglestwostatesareenough",
+    "title": "Dark mode toggles: two states are enough",
+    "url": "https://css-tricks.com/dark-mode-toggles-two-states-are-enough/",
+    "source": "CSS-Tricks",
+    "summary": "Plus, how to style skeleton UIs, how to enable diagonal scrolling, how images can overflow themselves, and yet, still more. Basically, how to do a lot of really cool (CSS) stuff. What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ui",
+      "image",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtosirinivaskthecomplianceframeworkswerewrittenbeforeaicodingtoolsexisted2pja",
+    "title": "The compliance frameworks were written before AI coding tools existed",
+    "url": "https://dev.to/sirinivask/the-compliance-frameworks-were-written-before-ai-coding-tools-existed-2pja",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;&lt;a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fqvt2f005wukcbfvmtep2.png\" class=\"article-body-image-wrapper\"&gt;&lt;img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-t",
+    "tags": [
+      "image",
+      "ia",
+      "ai",
+      "framework"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomcssnavigationmatchingearlydays",
+    "title": "CSS Navigation Matching, Early Days",
+    "url": "https://css-tricks.com/css-navigation-matching-early-days/",
+    "source": "CSS-Tricks",
+    "summary": "As someone who teaches beginning web development, I find that building a WordPress site makes for a great final project. Hosting those projects has always been a roadblock though. WordPress.com Student Plan originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ui",
+      "wordpress"
+    ],
+    "foundAt": "2026-08-19T21:29:05.000Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomblockedariahiddenfix",
+    "title": "Blocked aria-hidden: The Warning is Right, and Every Fix You&#8217;ve Found is Wrong",
+    "url": "https://css-tricks.com/blocked-aria-hidden-fix/",
+    "source": "CSS-Tricks",
+    "summary": "Border images are an overlooked feature. One neat fact is that border image slices can run across entire borders on an element, and animating it creates beautiful effects. Animating CSS border-image originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "image",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202608euguidelinesailabelling",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "There’s been a lot of confusion and panic this week about “huge fines”, “drastic measures” and “sweeping new AI rules” in the EU. In reality, it’s a lot more narrow — and a lot more sensible. And mostly it’s about making AI more obvious when it actually needs to be obvious — especially for AI-generated content. Starting from Aug 2, 2026, AI labelling is a legal requirement for any company that ser",
+    "tags": [
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.312Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202608buildingtactileuxhonoringintentionaldesignlottie",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "This article is a sponsored by Isadora Agency When front-end developers and UX engineers are tasked with building a web interface that feels tactile, bouncy, or destructive, the industry instinct is almost always the same: reach for a physics engine. Frameworks like Matter.js, Cannon.js, or custom WebGL solutions have become the gold standard for creating immersive, gamified websites. When our tea",
+    "tags": [
+      "ux",
+      "ui",
+      "framework"
+    ],
+    "foundAt": "2026-08-19T21:29:05.312Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoisraelsaba5portableagentskillsforopencodeandclaudecode2a30",
+    "title": "5 Portable Agent Skills for OpenCode and Claude Code",
+    "url": "https://dev.to/israelsaba/5-portable-agent-skills-for-opencode-and-claude-code-2a30",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Agent Skills turn repeated prompts into reusable, inspectable workflows.&lt;/p&gt; &lt;p&gt;This collection includes five small skills for work that comes up often when building with OpenCode or Claude Code: reviewing public copy, checking text limits, capturing public webpages as PDFs, sending task notifications, and structuring research for later use.&lt;/p&gt; &lt;p&gt;The full index",
+    "tags": [
+      "search",
+      "ui",
+      "webp"
+    ],
+    "foundAt": "2026-08-19T21:29:05.477Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtomadalitsonyembaimaginehavingaherokumobileappa27o8",
+    "title": "Imagine Having a Heroku Mobile App",
+    "url": "https://dev.to/madalitsonyemba/imagine-having-a-heroku-mobile-appa-27o8",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;&lt;a href=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ffdgtw7j59unf9qwra91h.png\" class=\"article-body-image-wrapper\"&gt;&lt;img src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-t",
+    "tags": [
+      "image",
+      "ia",
+      "mobile"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoalifaropenaiaddszerodataretentionandprivatesafetyprocessingforenterpriseai26dd",
+    "title": "OpenAI Adds Zero Data Retention and Private Safety Processing for Enterprise AI",
+    "url": "https://dev.to/alifar/openai-adds-zero-data-retention-and-private-safety-processing-for-enterprise-ai-26dd",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;OpenAI has announced &lt;strong&gt;Zero Data Retention (ZDR)&lt;/strong&gt; for &lt;a href=\"https://scalevise.com/resources/openai-preparedness-framework-v2-governance/\" rel=\"noopener noreferrer\"&gt;frontier-model deployments&lt;/a&gt; and a new &lt;strong&gt;Private Safety Processing&lt;/strong&gt; layer for enterprise customers. The combination is designed to address a difficult enterpr",
+    "tags": [
+      "design",
+      "ai",
+      "framework"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblognewsinsightscompanynewsyourguidetogithubuniverse2026isheretheschedulejustlaunched",
+    "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+    "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+    "source": "The GitHub Blog",
+    "summary": "The GitHub Universe 2026 schedule just dropped, and it&rsquo;s full of exciting sessions, demos, and panels covering the potential of AI-powered development. If you haven&rsquo;t registered yet, here&rsquo;s what you need to know. This two-day event brings together some of the greatest minds in tech, with experts from companies like AMD, Figma, NVIDIA, Coinbase, Anthropic, and OpenAI leading ou",
+    "tags": [
+      "ui",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogopensourcemaintainerswhat50opensourceprojectstaughtusaboutsecurityintheaiera",
+    "title": "What 50 open source projects taught us about security in the AI era",
+    "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+    "source": "The GitHub Blog",
+    "summary": "AI is changing the pace of open source development and the security challenges that come with it. Maintainers are reviewing unfamiliar contributions, managing new attack surfaces, and responding to vulnerabilities with limited time and resources. Session 4 of the GitHub Secure Open Source Fund tested a practical response. The Secure Fund invested more than $500,000 across 50 projects, pairing m",
+    "tags": [
+      "security",
+      "ia",
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomwordpressstudentplan",
+    "title": "WordPress.com Student Plan",
+    "url": "https://css-tricks.com/wordpress-student-plan/",
+    "source": "CSS-Tricks",
+    "summary": "Lea's pushing back on light/dark mode implementations that display three state options for visitors: light, dark, and system. Dark mode toggles: two states are enough originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "wordpress"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomwhatsimportant17",
+    "title": "What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More",
+    "url": "https://css-tricks.com/whats-important-17/",
+    "source": "CSS-Tricks",
+    "summary": "The warning is correct. And the recommended fixes you've probably seen are wrong. Here's what you can do instead to properly fix the issue. Blocked aria-hidden: The Warning is Right, and Every Fix You&#8217;ve Found is Wrong originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomanimatingcssborderimage",
+    "title": "Animating CSS border-image",
+    "url": "https://css-tricks.com/animating-css-border-image/",
+    "source": "CSS-Tricks",
+    "summary": "Smashing Magazine’s in-person conferences are back and returning to the wonderful city of Freiburg next month, September 7–10. SmashingConf Freiburg 2026, September 7-10 originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "image"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpscsstrickscomsmashingconffreiburg2026september710",
+    "title": "SmashingConf Freiburg 2026, September 7-10",
+    "url": "https://css-tricks.com/smashingconf-freiburg-2026-september-7-10/",
+    "source": "CSS-Tricks",
+    "summary": "There's a lot of nuance to the &#60;dialog&#62; element, a seemingly little piece of web architecture. I've got some notes from digging into it. Using and Styling the Dialog Element originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
+    "tags": [
+      "css",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.001Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtojayachapparamreplayingrealtimetelemetrythroughaliverenderingpipelinewithouttouchingthecomponents4g33",
+    "title": "Replaying real-time telemetry through a live rendering pipeline, without touching the components",
+    "url": "https://dev.to/jaya_chapparam/replaying-real-time-telemetry-through-a-live-rendering-pipeline-without-touching-the-components-4g33",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;I have a set of React components that render live telemetry: an attitude indicator, a moving map, tapes and gauges, a scrolling event log. They take a data source, subscribe to it, and paint whatever numbers arrive. That works for a live feed. The obvious next thing you want is replay: load a recorded session, scrub a timeline, watch the same instruments play it back.&lt;/p&gt; &lt;p&gt;",
+    "tags": [
+      "react",
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtolucianlkb1f009dwatchagameaithinkminimaxandalphabetainabrowsertab3onj",
+    "title": "Watch a Game AI Think: Minimax and Alpha-Beta, in a Browser Tab",
+    "url": "https://dev.to/lucian_lkb_1f009d/watch-a-game-ai-think-minimax-and-alpha-beta-in-a-browser-tab-3onj",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;Every \"AI\" opponent in a board game — Tic-Tac-Toe, Connect 4, Checkers, Othello, Chess — tends to run the same idea: search the game tree, assume the opponent plays their best, and pick the move with the best guaranteed outcome. That idea is &lt;strong&gt;minimax&lt;/strong&gt;, and &lt;strong&gt;alpha-beta pruning&lt;/strong&gt; is what makes it fast enough to run in a browser tab with n",
+    "tags": [
+      "search",
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilothowtobringyoursoftwaredeliveryworkflowintogithubwithagentapps",
+    "title": "How to bring your software delivery workflow into GitHub with agent apps",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
+    "source": "The GitHub Blog",
+    "summary": "How many tabs do you have open alongside your pull request? Imagine picking up a new issue in your product&rsquo;s free-trial onboarding flow: make the &ldquo;invite your teammates&rdquo; step optional. Support keeps flagging the step as a friction point as signups increase. Quick win, right? From scoping to deployment, you need answers to these four questions: Is this even the right cha",
+    "tags": [
+      "ui",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogopensourcemaintainersyourcontributorsareaifirstnowisyourproject",
+    "title": "Your contributors are AI-first now. Is your project?",
+    "url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/",
+    "source": "The GitHub Blog",
+    "summary": "The same question keeps coming up in maintainer conversations: what do you do when the pull request queue fills with work written by agents? It&rsquo;s something Nicholas Tindle, founding AI engineer at AutoGPT, also deals with every day. I spoke with him in May for Maintainer Month. At the time of the interview, AutoGPT had over 180,000 stars and around 150 open pull requests. A big chunk of t",
+    "tags": [
+      "ai",
+      "gpt"
+    ],
+    "foundAt": "2026-08-19T21:29:05.787Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogdeveloperskillscareergrowthfromcodertoorchestratorhowagentsshifttheroleofadeveloper",
+    "title": "From coder to orchestrator: How agents shift the role of a developer",
+    "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+    "source": "The GitHub Blog",
+    "summary": "Stop me if you&rsquo;ve heard this one before: I&rsquo;ve created an exciting new demo with just a single prompt. Everyone claps! One-prompt demos are quick and easy to create. But setting up a system that lets you generate code reliably and safely&hellip; that&rsquo;s a completely different story. With a prompt, you receive a one-off output, but what you need is a wired workflow to prod",
+    "tags": [
+      "ui",
+      "ia"
+    ],
+    "foundAt": "2026-08-19T21:29:05.787Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202605designingstableinterfacesstreamingcontent",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "More interfaces now render while the response is still being generated. The UI begins in one state, then updates as more data comes in. You see this in chat apps, logs, transcription tools, and other real-time systems. The tricky part is that the interface is not in a fixed state; it keeps changing as new content comes in. It grows where lines become longer and new blocks appear. Something that wa",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-19T21:29:05.312Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202604desktopwallpapercalendarsmay2026",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/04/desktop-wallpaper-calendars-may-2026/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "May has a way of sneaking in with longer days, softer light, and that first real hint of summer in the air. It’s the season of fresh ideas and just enough energy to start something new, or finally pick up something you’ve been putting off. And sometimes, all it takes to spark that little bit of inspiration is a fresh view… even if it’s just on your desktop. That’s where our monthly wallpapers ser",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.312Z",
+    "used": false
+  },
+  {
+    "id": "httpssmashingmagazinecom202603desktopwallpapercalendarsapril2026",
+    "title": "",
+    "url": "https://smashingmagazine.com/2026/03/desktop-wallpaper-calendars-april-2026/",
+    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
+    "summary": "Starting the new month with a little inspiration boost — that’s the idea behind our monthly wallpapers series which has been going on for more than 15 years already. Each month, the wallpapers are created by the community for the community, and everyone who has an idea for a design is welcome to join in — experienced designers just like aspiring artists. For this edition, creative folks from acro",
+    "tags": [
+      "design"
+    ],
+    "foundAt": "2026-08-19T21:29:05.312Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoalifaropenaiexpandszerodataretentionoptionsforfrontiermodelenterpriseworkloadsbjb",
+    "title": "OpenAI Expands Zero Data Retention Options for Frontier Model Enterprise Workloads",
+    "url": "https://dev.to/alifar/openai-expands-zero-data-retention-options-for-frontier-model-enterprise-workloads-bjb",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;OpenAI is positioning &lt;a href=\"https://scalevise.com/resources/openai-zero-data-retention-frontier-models/\" rel=\"noopener noreferrer\"&gt;&lt;strong&gt;Zero Data Retention (ZDR)&lt;/strong&gt;&lt;/a&gt; as a scalable privacy control for eligible frontier-model API and enterprise workloads. The policy matters as businesses use more capable models for longer-running and increasingly auton",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtopetrohrys700kgoogleadsimpressionslaterwhyiminvestingmoreinorganicgrowth4pa6",
+    "title": "700K Google Ads Impressions Later: Why I’m Investing More in Organic Growth",
+    "url": "https://dev.to/petrohrys/700k-google-ads-impressions-later-why-im-investing-more-in-organic-growth-4pa6",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;700K Google Ads Impressions Later: Why I’m Investing More in Organic Growth&lt;/p&gt; &lt;p&gt;Over the last year, I’ve used Google Ads to acquire traffic and test several digital products.&lt;/p&gt; &lt;p&gt;The aggregate numbers:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;700K impressions&lt;/li&gt; &lt;li&gt;17.9K clicks&lt;/li&gt; &lt;li&gt;$13.4K spent&lt;/li&gt; &lt;li&gt;$0.75 average CPC&l",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtomaclessdevsetituponcestopthinkingaboutitfk0",
+    "title": "Set it up once. Stop thinking about it.",
+    "url": "https://dev.to/maclessdev/set-it-up-once-stop-thinking-about-it-fk0",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;The whole pitch of Macless is that you shouldn't need a Mac, a rented cloud Mac, or a monthly CI subscription to ship an iOS or Android app — GitHub's free build minutes and a workflow file do the job Xcode used to. That part's been true since Citolex shipped on it. But there was a second, quieter kind of manual work I hadn't fully gotten rid of: generating the signing certificates and ke",
+    "tags": [
+      "ui"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsdevtoviraaiwhyaishouldreturninterfacesnotwallsoftext4130",
+    "title": "Why AI Should Return Interfaces, Not Walls of Text",
+    "url": "https://dev.to/viraai/why-ai-should-return-interfaces-not-walls-of-text-4130",
+    "source": "DEV Community",
+    "summary": "&lt;p&gt;AI assistants have trained us to accept a strange default: ask for an outcome, receive a wall of text, then do the work of turning that text into something usable.&lt;/p&gt; &lt;p&gt;That default is convenient for a model. It is not always useful for a person.&lt;/p&gt; &lt;p&gt;A recipe is not only a paragraph. A project plan is not only a list. A comparison is not only a summary. Thes",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.478Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilothowcanvasesmakeagenticworkflowsvisiblesteerableandcostefficient",
+    "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+    "source": "The GitHub Blog",
+    "summary": "When I was in college, I joined the beta for one of the first versions of AI inline completions in VS Code. It felt like a game changer. Since then, GenAI has fundamentally changed software development: hybrid teams where agents and humans work in tandem, with the developer at the center as visionary and orchestrator. We are living in that transition right now. As a natural byproduct of how",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblognewsinsightscompanynewsgithubavailabilityreportjuly2026",
+    "title": "GitHub availability report: July 2026",
+    "url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026/",
+    "source": "The GitHub Blog",
+    "summary": "The GitHub Actions incident on Thursday, August 6, was unacceptable in both its impact and particularity of its duration. Availability continues to be our top priority across all of GitHub. However, with this incident, we have fallen short of our commitments to you. We know how heavily customers rely on actions, and a prolonged outage like this one has a real impact on your productivity and on you",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
+    "id": "httpsgithubblogaiandmlgithubcopilotwriteyourfirstpromptwiththegithubcopilotapp",
+    "title": "GitHub Copilot app for Beginners: Write your first prompt",
+    "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/",
+    "source": "The GitHub Blog",
+    "summary": "Opening a new AI tool can feel a little like staring at a blank page. You know you want help with something, but figuring out exactly what to ask can be its own task. The good news is that you don&rsquo;t need to write the perfect prompt to get started. A prompt is simply a description of what you want to accomplish. Start with what you know, give Copilot some context, and refine the request as",
+    "tags": [
+      "ai"
+    ],
+    "foundAt": "2026-08-19T21:29:05.786Z",
+    "used": false
+  },
+  {
     "id": "httpsdevtokoushikmayacssarchitecture257i",
     "title": "CSS Architecture",
     "url": "https://dev.to/koushikmaya/css-architecture-257i",
@@ -1198,366 +1591,6 @@
       "javascript"
     ],
     "foundAt": "2026-08-03T19:44:36.379Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogcolorpalettescsscolormix",
-    "title": "Creating color palettes with the CSS color-mix() function",
-    "url": "https://developer.mozilla.org/en-US/blog/color-palettes-css-color-mix/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogintroductiontowebsustainability",
-    "title": "Introduction to web sustainability",
-    "url": "https://developer.mozilla.org/en-US/blog/introduction-to-web-sustainability/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogmigratingfromgithubtogitlabseamlesslyastepbystepguide",
-    "title": "Migrating from GitHub to GitLab seamlessly: A step-by-step guide",
-    "url": "https://developer.mozilla.org/en-US/blog/migrating-from-github-to-gitlab-seamlessly-a-step-by-step-guide/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "ui"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogcustomeasingincsswithlinear",
-    "title": "Creating custom easing effects in CSS animations using the linear() function",
-    "url": "https://developer.mozilla.org/en-US/blog/custom-easing-in-css-with-linear/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogscrollprogressanimationsincss",
-    "title": "Scroll progress animations in CSS",
-    "url": "https://developer.mozilla.org/en-US/blog/scroll-progress-animations-in-css/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogaiexplainpostmortem",
-    "title": "Reflections on AI Explain: A postmortem",
-    "url": "https://developer.mozilla.org/en-US/blog/ai-explain-postmortem/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogintroducingaihelp",
-    "title": "Introducing AI Help (Beta): Your Companion for Web Development",
-    "url": "https://developer.mozilla.org/en-US/blog/introducing-ai-help/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusbloglearncsshuescolorshsl",
-    "title": "Learn how to use hue in CSS colors with HSL",
-    "url": "https://developer.mozilla.org/en-US/blog/learn-css-hues-colors-hsl/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogjavascriptshapedrawingfunction",
-    "title": "How to draw any regular shape with just one JavaScript function",
-    "url": "https://developer.mozilla.org/en-US/blog/javascript-shape-drawing-function/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "javascript"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogregularexpressionsreferenceupdates",
-    "title": "New reference pages on MDN for JavaScript regular expressions",
-    "url": "https://developer.mozilla.org/en-US/blog/regular-expressions-reference-updates/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "javascript"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogcssnotpseudomultipleselectors",
-    "title": "How :not() chains multiple selectors",
-    "url": "https://developer.mozilla.org/en-US/blog/css-not-pseudo-multiple-selectors/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpsdevelopermozillaorgenusblogcsscolormodulelevel4",
-    "title": "New functions, gradients, and hues in CSS colors (Level 4)",
-    "url": "https://developer.mozilla.org/en-US/blog/css-color-module-level-4/",
-    "source": "MDN Blog",
-    "summary": "",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.380Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomalmanacpropertieswwritingmode",
-    "title": "writing-mode",
-    "url": "https://css-tricks.com/almanac/properties/w/writing-mode/",
-    "source": "CSS-Tricks",
-    "summary": "The pointer-events property controls whether an element can become the target of pointer events like clicks, hover states, and other pointer-based events. In other words, it lets you decide whether the browser should treat an element as interactive when the &#8230; pointer-events originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomwhatsimportant15",
-    "title": "What’s !important #15: Boundary-aware CSS, Time-based CSS, Full-bleed CSS, and More",
-    "url": "https://css-tricks.com/whats-important-15/",
-    "source": "CSS-Tricks",
-    "summary": "I know you’re busy, so for What’s !important #14, I’ll be sprinting through what’s been a stacked couple of weeks despite few browser updates. From CSS Quake to CSS Gap Decorations, this isn’t one to miss! What’s !important #14: Gap Decorations, random(), &lt;select&gt; field-sizing, and More originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as wel",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomalmanacfunctionsttranslatez",
-    "title": "translateZ()",
-    "url": "https://css-tricks.com/almanac/functions/t/translatez/",
-    "source": "CSS-Tricks",
-    "summary": "The translateY() function shifts an element vertically by the specified amount. translateY() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomalmanacfunctionsttranslatey",
-    "title": "translateY()",
-    "url": "https://css-tricks.com/almanac/functions/t/translatey/",
-    "source": "CSS-Tricks",
-    "summary": "The translateX() function shifts an element horizontally by the specified amount. translateX() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomalmanacfunctionsttranslatex",
-    "title": "translateX()",
-    "url": "https://css-tricks.com/almanac/functions/t/translatex/",
-    "source": "CSS-Tricks",
-    "summary": "The CSS translate() function shifts an element from its default position on a 2-dimensional plane translate() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomscrolldrivenanimationsopposingscrolldirections",
-    "title": "Using Scroll-Driven Animations for Opposing Scroll Directions",
-    "url": "https://css-tricks.com/scroll-driven-animations-opposing-scroll-directions/",
-    "source": "CSS-Tricks",
-    "summary": "Let's poke at the differences between scroll-driven and scroll-triggered animations. A First Look at Scroll-Triggered Animations originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well. ]]>",
-    "tags": [
-      "css"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpscsstrickscomthesirensongofarianotify",
-    "title": "The Siren Song of ariaNotify()",
-    "url": "https://css-tricks.com/the-siren-song-of-arianotify/",
-    "source": "CSS-Tricks",
-    "summary": "",
-    "tags": [
-      "ia"
-    ],
-    "foundAt": "2026-08-03T19:44:36.945Z",
-    "used": false
-  },
-  {
-    "id": "httpswwwsmashingmagazinecom",
-    "title": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "url": "https://www.smashingmagazine.com/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "Recent content in Articles on Smashing Magazine — For Web Designers And Developers",
-    "tags": [
-      "design"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202607desktopwallpapercalendarsaugust2026",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/07/desktop-wallpaper-calendars-august-2026/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "Everybody loves a beautiful wallpaper to freshen up their desktops and home screens, right? To provide you with inspiring designs on a regular basis, we started our monthly wallpapers series more than 15 years ago, and from the very beginning to today, artists and designers from across the globe have tickled their creativity and contributed their artworks to it. This August is no exception, of co",
-    "tags": [
-      "design"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202607weaponizingdefendingreactflightprotocol",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/07/weaponizing-defending-react-flight-protocol/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "React Server Components don’t send HTML to your browser. They don’t send JSON either. When a server component renders, what actually travels over the wire is a custom streaming protocol called Flight. It’s a line-delimited format with its own type system, its own reference resolution, and its own rules for reconstructing executable behavior on the client. Most React developers have never opened th",
-    "tags": [
-      "react"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202607peopledontwantmoreai",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/07/people-dont-want-more-ai/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "Many companies silently assume that everybody wants more AI in their lives. That people are craving new AI features, new AI products, new AI workflows — that would all magically replace all existing outdated practices and broken ways of working. But in reality, it seems like people don’t want more AI at all — at least not in the way most AI leaders envision it. Unsurprisingly, many AI features hav",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202607usersdontneedmoretoolsneedseamlessintegrations",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/07/users-dont-need-more-tools-need-seamless-integrations/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "We often hear about shiny new tools that change everything (yet again). But in practice, most people don’t need more tools to deal with in their daily lives. What we actually need are better integrations of useful capabilities that neatly align with our existing and established mental models. Users don’t get excited about shiny new “smart” workflows, or navigating Terminal commands, or jumping bet",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202606impacthumanoidrobotshumanity",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/06/impact-humanoid-robots-humanity/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "For decades, science fiction has cushioned us with the idea that the “android revolution” was a distant fantasy. But the reality is unfolding rapidly. As the line between human and machine blurs, we are forced to confront an impending psychological, economic, and existential shift. I recently felt very disturbed after watching a YouTube video showcasing a humanoid robot that looked and acted with",
-    "tags": [
-      "ia"
-    ],
-    "foundAt": "2026-08-03T19:44:37.114Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202605desktopwallpapercalendarsjune2026",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/05/desktop-wallpaper-calendars-june-2026/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "Everyone has a creative spark in them. Some bring their ideas to life with digital tools, others capture the perfect moment with a camera or love to grab pen and paper to create little doodles or pieces of lettering. And even if you don’t think of yourself as particularly creative, who knows? There might be a hidden talent waiting to be discovered! That’s exactly what our monthly wallpapers serie",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:37.115Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202605prototypeusersfixprotopie",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/05/prototype-users-fix-protopie/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "This article is a sponsored by ProtoPie There’s a moment in almost every usability session where a participant pauses at the login screen, types something, and glances up: checking whether they’re “doing it right.” That pause is a clear sign. They’ve already clocked that this isn’t a real app, and every data point collected after that moment is filtered through that awareness. In financial product",
-    "tags": [
-      "ia"
-    ],
-    "foundAt": "2026-08-03T19:44:37.115Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202605practicalinterfacepatternsaitransparency",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "In the first part of this series, we talked about the Decision Node Audit. We mapped out the internal workings of our AI system to pinpoint the exact moments it makes decisions based on probabilities. This told us when the system needs to be transparent with the user. Now, the big question is how to share that information. You’ve got your Transparency Matrix ready. You know which behind-the-scenes",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:37.115Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202605architecturelocalfirstwebdevelopment",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/05/architecture-local-first-web-development/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "Last October, I was sitting in a hotel room in Lisbon, the night before I was supposed to demo a project management tool my team had spent four months building. The hotel Wi-Fi was doing that thing where it connects but nothing actually loads. And I watched our app, this thing I was genuinely proud of, render a blank screen with a spinner. Then a timeout error. Then nothing. I pulled out my phone,",
-    "tags": [
-      "ui"
-    ],
-    "foundAt": "2026-08-03T19:44:37.115Z",
-    "used": false
-  },
-  {
-    "id": "httpssmashingmagazinecom202605rethinkingexperiencesystemtools",
-    "title": "",
-    "url": "https://smashingmagazine.com/2026/05/rethinking-experience-system-tools/",
-    "source": "Articles on Smashing Magazine — For Web Designers And Developers",
-    "summary": "This article is a sponsored by MacPaw Your grandmother’s vacuum was a trusty but ugly workhorse hidden in a dark closet. Dyson turned that practical tool into an aspirational product, one you love leaving out even when guests come over. Dish soap was just dish soap until Method put it in a glass container, and it became an addition to, not a distraction from, the aesthetics of your kitchen. Physic",
-    "tags": [
-      "ai"
-    ],
-    "foundAt": "2026-08-03T19:44:37.115Z",
     "used": false
   }
 ]
