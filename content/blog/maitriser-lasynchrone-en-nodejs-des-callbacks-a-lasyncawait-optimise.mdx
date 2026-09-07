@@ -13,7 +13,6 @@ Node.js est puissant et rapide ⚡, en grande partie grâce à son modèle non b
 
 Dans cet article, nous allons explorer ce parcours : des traditionnels **callbacks** aux **Promises**, pour enfin arriver à la syntaxe `async/await`. Pour finir en beauté, nous analyserons une fonction `getContent` optimisée qui illustre une approche moderne et efficace pour charger des données de manière dynamique.
 
-<Faq title="FAQ : Asynchronisme en Node.js et performance web" faq={[ { title: "Je développe ou gère un site web — est-ce que je dois vraiment comprendre les callbacks et async/await ?", content: "Pas nécessairement en détail, mais comprendre le principe de l'asynchrone vous aide à mieux appréhender les sites modernes et leurs performances. En pratique, si vous travaillez avec un développeur freelance comme moi, j'utilise async/await, les Promises et des techniques parallèles optimisées pour que votre site soit rapide et fiable, sans que vous ayez à gérer la complexité technique au quotidien." }, { title: "Maîtriser l'asynchrone en Node.js peut-il impacter la performance d'un site Next.js ou d'une application web ?", content: "Oui, indirectement mais réellement. Des importations paresseuses bien gérées, des traitements parallélisés avec Promise.all, et une gestion d'erreurs robuste contribuent à un chargement plus rapide et plus stable. Dans mes projets, j'applique ces principes pour réduire les temps de réponse, surtout sur mobile, ce qui profite aussi au SEO local et à l'expérience visiteur." }, { title: "Les callbacks sont vieux et les promesses aussi — est-ce que ça change quelque chose pour un projet actuel ?", content: "Oui, car l'approche moderne (async/await + promesses) rend le code plus lisible, plus maintenable et plus facile à tester. Si vous devez faire évoluer, corriger ou auditer un site, cette modernisation des habitudes de code peut réduire les bugs et les temps de développement. Je peux intervenir sur des parties existantes pour les aligner sur les bonnes pratiques actuelles." }, { title: "Est-ce que je dois m'inquiéter de la performance de mon site si j'utilise un hébergement Vercel ou Next.js ?", content: "Ces outils offrent déjà des performances de base excellentes, mais les optimisations que j'apporte (importations dynamiques, chargement paresseux, parallélisation intelligente) peuvent faire la différence sur des sites avec beaucoup de contenus ou des besoins spécifiques. Si la vitesse et la qualité d'expérience sont importantes pour vous (et c'est souvent le cas pour attirer des clients locaux), on peut les intégrer de façon ciblée." }, ]} />
 ## 1\. L'Ancienne École : Les Callbacks 👹
 
 Au commencement de Node.js, tout reposait sur les callbacks. Le principe est simple : au lieu d'attendre qu'une tâche se termine ⏳, on lui passe une fonction (le callback) qu'elle devra "rappeler" une fois son travail fini.
@@ -21,7 +20,6 @@ Au commencement de Node.js, tout reposait sur les callbacks. Le principe est sim
 Le premier argument de ce callback est, par convention, réservé à une éventuelle erreur.
 
 **Exemple : Lire un fichier avec un callback** 💻
-
 
 // callback.js — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/callback.js
 ```js
@@ -36,11 +34,9 @@ readFile('./mon-fichier.txt', 'utf8', (error, data) => {
 });
 ```
 
-
 Le problème ? Quand on enchaîne plusieurs opérations asynchrones, on tombe vite dans ce qu'on appelle le **"Callback Hell"** (l'enfer des callbacks).
 
 **Schéma du Callback Hell : La Pyramide de l'Enfer**
-
 
 // callback-hell.js — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/callback-hell.js
 ```js
@@ -55,7 +51,6 @@ operation1(..., (err, data) => {
   });
 });
 ```
-
 
 Cette structure en pyramide est difficile à lire et à maintenir.
 
@@ -74,7 +69,6 @@ On peut enchaîner les opérations avec `.then()` pour les succès et gérer tou
 
 **Schéma de l'enchaînement des Promises :**
 
-
 // promise-schema.txt — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/promise-schema.txt
 ```txt
 Promesse
@@ -86,9 +80,7 @@ Promesse
   .catch( erreur => ... )  // Gestion de n'importe quelle erreur dans la chaîne
 ```
 
-
 **Exemple : Refactorisation avec les Promises** 💻
-
 
 // promises.js — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/promises.js
 ```js
@@ -107,7 +99,6 @@ fs.readFile('./mon-fichier.txt', 'utf8')
     });
 ```
 
-
 C'est déjà beaucoup plus propre !
 
 ## 3\. La Révolution : `async/await` 🪄
@@ -120,7 +111,6 @@ C'est déjà beaucoup plus propre !
     
 
 **Schéma de la logique** `async/await` **:**
-
 
 // async-await.js — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/async-await.js
 ```js
@@ -136,9 +126,7 @@ async function() {
 }
 ```
 
-
 **Exemple : La même logique avec** `async/await` 💻
-
 
 // async-await-exemple.js — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/async-await-exemple.js
 ```js
@@ -158,7 +146,6 @@ async function lireEtCopierFichier() {
 
 lireEtCopierFichier();
 ```
-
 
 Le code est linéaire, logique et bien plus facile à suivre. 😎
 
@@ -183,7 +170,6 @@ Dans le code initial, les `await` sont séquentiels. C'est sûr, mais pas optima
 
 **Schéma : Séquentiel vs Parallèle**
 
-
 // schema-getContent.txt — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/schema-getContent.txt
 ```txt
 // Séquentiel (await l'un après l'autre)
@@ -198,9 +184,7 @@ Temps total = T1 + T2 + T3
 Temps total = Temps de la tâche la plus longue
 ```
 
-
 Voici la version optimisée : 💨
-
 
 // getContent-opti.ts — https://raw.githubusercontent.com/micmc422/blogfiles/refs/heads/main/async-node.js/getContent-opti.ts
 ```ts
@@ -235,7 +219,6 @@ export default async function getOptimizedContent(pathArray: string[]): Promise<
 }
 ```
 
-
 Avec cette version, le temps de chargement total sera celui du fichier le plus long à charger. C'est une amélioration significative de la performance !
 
 ## Conclusion
@@ -243,9 +226,4 @@ Avec cette version, le temps de chargement total sera celui du fichier le plus l
 La gestion de l'asynchronisme en Node.js a parcouru un long chemin. Si les callbacks ont posé les bases, les Promises puis `async/await` ont rendu le code infiniment plus propre, lisible et maintenable.
 
 En maîtrisant des outils comme les importations dynamiques et `Promise.all`, vous pouvez non seulement écrire du code robuste, mais aussi l'optimiser pour offrir des performances maximales.
-<Faq title="FAQ : asynchronisme Node.js" faq={[
-  { title: "Qu'est-ce que le Callback Hell et comment l'éviter ?", content: "Le Callback Hell est une structure de code imbriquée difficile à lire. Évitez-le en passant aux Promises puis async/await, ou en utilisant des fonctions nommées modulaires." },
-  { title: "async/await bloque-t-il le thread principal ?", content: "Non, async/await diffère l'exécution sans bloquer le thread. Seul le code synchrone dans la fonction est exécuté immédiatement ; les await suspendent l'exécution jusqu'à résolution de la promesse." },
-  { title: "Pourquoi utiliser Promise.all pour optimiser le chargement ?", content: "Promise.all exécute plusieurs promesses en parallèle au lieu de séquentiellement. Cela réduit le temps total de chargement à celui de la tâche la plus longue, idéal pour les données indépendantes." },
-  { title: "Comment gérer les erreurs avec async/await ?", content: "Utilisez un bloc try...catch autour du code async. Si une promesse est rejetée, l'erreur est interceptée par le catch, évitant un crash silencieux ou une propagation non gérée." },
-]} />
+<Faq data-props="%7B%22title%22%3A%20%22FAQ%20%3A%20asynchronisme%20Node.js%22%2C%20%22faq%22%3A%20%5B%7B%22title%22%3A%20%22Qu%27est-ce%20que%20le%20Callback%20Hell%20et%20comment%20l%27%C3%83%C2%A9viter%20%3F%22%2C%20%22content%22%3A%20%22Le%20Callback%20Hell%20est%20une%20structure%20de%20code%20imbriqu%C3%83%C2%A9e%20difficile%20%C3%83%C2%A0%20lire.%20%C3%83%C2%89vitez-le%20en%20passant%20aux%20Promises%20puis%20async%2Fawait%2C%20ou%20en%20utilisant%20des%20fonctions%20nomm%C3%83%C2%A9es%20modulaires.%22%7D%2C%20%7B%22title%22%3A%20%22async%2Fawait%20bloque-t-il%20le%20thread%20principal%20%3F%22%2C%20%22content%22%3A%20%22Non%2C%20async%2Fawait%20diff%C3%83%C2%A8re%20l%27ex%C3%83%C2%A9cution%20sans%20bloquer%20le%20thread.%20Seul%20le%20code%20synchrone%20dans%20la%20fonction%20est%20ex%C3%83%C2%A9cut%C3%83%C2%A9%20imm%C3%83%C2%A9diatement%20%3B%20les%20await%20suspendent%20l%27ex%C3%83%C2%A9cution%20jusqu%27%C3%83%C2%A0%20r%C3%83%C2%A9solution%20de%20la%20promesse.%22%7D%2C%20%7B%22title%22%3A%20%22Pourquoi%20utiliser%20Promise.all%20pour%20optimiser%20le%20chargement%20%3F%22%2C%20%22content%22%3A%20%22Promise.all%20ex%C3%83%C2%A9cute%20plusieurs%20promesses%20en%20parall%C3%83%C2%A8le%20au%20lieu%20de%20s%C3%83%C2%A9quentiellement.%20Cela%20r%C3%83%C2%A9duit%20le%20temps%20total%20de%20chargement%20%C3%83%C2%A0%20celui%20de%20la%20t%C3%83%C2%A2che%20la%20plus%20longue%2C%20id%C3%83%C2%A9al%20pour%20les%20donn%C3%83%C2%A9es%20ind%C3%83%C2%A9pendantes.%22%7D%2C%20%7B%22title%22%3A%20%22Comment%20g%C3%83%C2%A9rer%20les%20erreurs%20avec%20async%2Fawait%20%3F%22%2C%20%22content%22%3A%20%22Utilisez%20un%20bloc%20try...catch%20autour%20du%20code%20async.%20Si%20une%20promesse%20est%20rejet%C3%83%C2%A9e%2C%20l%27erreur%20est%20intercept%C3%83%C2%A9e%20par%20le%20catch%2C%20%C3%83%C2%A9vitant%20un%20crash%20silencieux%20ou%20une%20propagation%20non%20g%C3%83%C2%A9r%C3%83%C2%A9e.%22%7D%5D%7D" />
