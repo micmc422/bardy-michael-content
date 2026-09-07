@@ -1,14 +1,11 @@
 # Prompts Nano Banana — Images de couverture manquantes
 
-Ce fichier contient les prompts pour générer les images de couverture manquantes via Nano Banana (ou tout générateur d'image).
-
 **Spécifications communes :**
 - Format : 16:9 (1920×1080)
 - Style : illustration éditoriale moderne, flat design, ambiance tech
 - Couleurs dominantes : noir/bleu profond (`#0a0e27`) + accents néon (teal, vert, bleu, or)
 - Pas de texte dans l'image
-- Fichier de sortie : `blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png`
-- Emplacement : `blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png`
+- Fichier de sortie : `blog/<slug>/image.png`
 
 ---
 
