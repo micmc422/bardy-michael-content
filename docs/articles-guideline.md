@@ -118,7 +118,7 @@ Le site compile correctement les fences (pas de restriction comme avec Wisp).
 ### Images dans le corps
 
 ```md
-![Texte alternatif descriptif](/images/blog/image.webp)
+![Texte alternatif descriptif](/images/blog/image.png)
 ```
 
 - Toujours renseigner l'alt (accessibilité + SEO)
