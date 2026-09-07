@@ -1,0 +1,9 @@
+# Brouillons locaux
+articles/
+scripts/
+
+# Cover images générées localement
+*.png
+
+# OS
+.DS_Store
