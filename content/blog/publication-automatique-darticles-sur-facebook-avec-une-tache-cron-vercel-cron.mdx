@@ -5,7 +5,7 @@ publishedAt: 2025-06-16T21:03:24.058Z
 updatedAt: 2025-08-01T11:21:50.947Z
 image: "/blog/publication-automatique-darticles-sur-facebook-avec-une-tache-cron-vercel-cron/image.png"
 tags: ["Vercel","facebook","Next.js"]
-author: "michael Bardy"
+author: "Michaël Bardy"
 ---
 Dans le cadre de l’amélioration continue de mon site, j’ai conçu un système automatisé pour diffuser les nouveaux articles de blog sur les réseaux sociaux (Facebook et LinkedIn). L'objectif est avant tout d'améliorer le SEO du site en générant des backlinks et en augmentant la visibilité des contenus.
 
@@ -600,4 +600,9 @@ Ce modèle serverless offre une architecture performante, scalable, et totalemen
 * * *
 
 En résumé : un système automatisé, robuste et léger, qui simplifie la gestion des publications tout en améliorant la visibilité SEO du portfolio 🚀.
-
+<Faq title="FAQ : automatisation publication réseaux sociaux" faq={[
+  { title: "Comment automatiser la publication d'articles sur Facebook et LinkedIn ?", content: "Un système serverless avec Vercel Cron exécute une tâche quotidienne qui publie les articles récents via les APIs Facebook (Graph API) et LinkedIn (UGC). Les métadonnées OpenGraph enrichissent automatiquement le post." },
+  { title: "Pourquoi faut-il renouveler le token Facebook et comment le faire automatiquement ?", content: "Le token Facebook expire au bout d'environ 60 jours. Une tâche cron quotidienne vérifie et renouvelle le token via l'API Facebook avant expiration, le stocke dans Vercel Edge Config pour éviter toute interruption." },
+  { title: "Quels sont les avantages de l'automatisation pour mon portfolio ?", content: "Gain de temps, présence régulière et optimisée sur les réseaux, enrichissement des publications avec titres et images, et amélioration du SEO grâce aux backlinks et à la visibilité accrue." },
+  { title: "Comment gérer les erreurs si une publication échoue ?", content: "Le système est conçu avec des blocs try/catch pour intercepter les erreurs d'API. Les échecs sont logués pour suivi, et un fallback peut être ajouté pour les cas récurrents. Le système reste robuste et évolutif." },
+]} />

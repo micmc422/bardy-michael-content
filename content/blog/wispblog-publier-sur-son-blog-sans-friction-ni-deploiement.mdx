@@ -5,7 +5,7 @@ publishedAt: 2025-05-28T00:00:53.659Z
 updatedAt: 2025-08-01T11:47:55.728Z
 image: "/blog/wispblog-publier-sur-son-blog-sans-friction-ni-deploiement/image.png"
 tags: ["Headless","blogging","Next.js"]
-author: "michael Bardy"
+author: "Michaël Bardy"
 ---
 Quand on développe son site en **React** ou **Next.js**, on veut souvent tout contrôler, y compris le contenu. Comme beaucoup, j’utilisais des fichiers `.mdx` pour rédiger mes articles de blog : une solution souple — on code, on versionne, on déploie.
 
@@ -110,4 +110,9 @@ Plus besoin de passer par Git pour publier une idée.
 
 Si vous êtes développeur et que vous gérez encore vos contenus en Markdown localement :  
 **testez Wisp.blog** — vous redécouvrirez le plaisir d’écrire.
-
+<Faq title="FAQ : publier un blog sans déploiement" faq={[
+  { title: "Qu'est-ce que Wisp.blog et qui est-il pour ?", content: "Wisp est un CMS ultra-léger pour développeurs qui veulent publier des articles en Markdown sans friction. Pas de back-office lourd, juste un éditeur rapide avec drag & drop d'images et gestion des brouillons." },
+  { title: "Comment Wisp évite-t-il les déploiements à chaque modification ?", content: "Votre site Next.js ou React récupère le contenu directement depuis l'API JSON de Wisp. Plus besoin de commit, push ou rebuild : une correction se reflète instantanément en production." },
+  { title: "Wisp est-il compatible avec un site statique ou Next.js existant ?", content: "Oui, l'intégration est simple : replacez votre lecture de fichiers .mdx par un appel API vers Wisp. Le rendu reste identique, et le contenu devient éditable en temps réel sans toucher à votre codebase." },
+  { title: "Quels sont les avantages concrets par rapport à un blog en fichiers locaux ?", content: "Gain de temps, moindre friction (pas de VS Code pour chaque correction), meilleure expérience d'écriture, API simple pour trier/filtrer les articles, et Markdown natif pour rester dans son workflow familier." },
+]} />
