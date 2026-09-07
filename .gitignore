@@ -1,0 +1,10 @@
+# Brouillons locaux (non destinés à être versionnés)
+articles/
+scripts/
+
+# OS
+.DS_Store
+
+# Couvertures générées en local (avant placement dans blog/<slug>/)
+# Les images dans blog/<slug>/ sont versionnées et servies par le site
+# *.png  <-- supprimé : bloquait les couvertures essentielles
