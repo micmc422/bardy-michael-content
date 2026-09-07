@@ -1,88 +1,81 @@
-# AGENTS.md — Portfolio & CV Michaël Bardy (occitaweb.fr)
+# AGENTS.md — Contenu du site portfolio Michaël Bardy (occitaweb.fr)
 
 > Fichier auto-chargé par les agents IA (Hermes, Copilot, Claude Code…). Source de vérité : le code.
-> Détails étendus : `.github/copilot-instructions.md` · API Once UI : `.github/agents/once-ui.md` · Index : `llms.txt`
+> Dépôt associé : `bardy-michael-portfolio-cv` (site Next.js)
+> Guideline rédaction : `docs/articles-guideline.md` · Index : `llms.txt`
 
-## Projet
+## Rôle de ce dépôt
 
-Site portfolio/CV de Michaël Bardy, développeur web freelance à Albi (activité **Occitaweb**). Déployé sur Vercel → https://occitaweb.fr. Français-first (routes, contenu, commits).
+Dépôt de **contenu** du site portfolio/CV de Michaël Bardy, développeur web freelance à Albi (activité Occitaweb). Les fichiers MDX versionnés ici sont consommés dynamiquement par le site Next.js via l'API GitHub (raw.githubusercontent.com + cache ISR avec `unstable_cache`, revalidate 3600s).
 
-## Stack réelle (vérifiée dans package.json)
+**Pas de rebuild du site nécessaire** pour modifier le contenu : le site lit les MDX à la volée depuis ce dépôt distant.
 
-- **Next.js 16.2.6** (App Router, Turbopack en dev) + **React 19.2.6** + **TypeScript 5.9 strict**
-- **@once-ui-system/core 1.6.4** — design system principal (props, PAS de CSS custom pour ses composants)
-- SCSS Modules (`*.module.scss`) + tokens `src/tokens/scheme.scss` — **pas de Tailwind**
-- Wisp CMS (`@wisp-cms/client`) pour blog & projets · Neon Postgres + Drizzle (`src/utils/db.ts`)
-- MDX via `@next/mdx` · Recharts + chart.js · @react-pdf/renderer · puppeteer-core/@sparticuz (site-check)
-- Tests : **Vitest** + Testing Library (jsdom) · Lint : **ESLint 9** (`eslint.config.js`, importe `eslint-config-next` + FlatCompat dans `eslint.config.mjs`) · Format : Biome (2 espaces, doubles quotes)
+## Structure
 
-## Commandes (pnpm 10 UNIQUEMENT — jamais npm/yarn)
-
-```bash
-pnpm dev             # dev Turbopack :3000
-pnpm build           # build prod
-pnpm lint            # eslint --quiet
-pnpm test            # vitest run  (tests dans src/__tests__/)
-pnpm test:coverage
-pnpm clean           # depcheck + ts-prune + npm-check + eslint --fix
+```
+content/
+├── blog/          # Articles au format MDX (frontmatter YAML + JSX)
+│   └── <slug>.mdx # = un article
+├── projects/      # Projets au format MDX
+│   └── <slug>.mdx
+├── ideas.json     # Brouillons / idées d'articles (non versionnés en prod)
+blog/              # Images de couverture (copiées dans public/blog du site en dev)
+articles/          # Brouillons non versionnés (workflow local)
+docs/              # Documentation (guidelines, etc.)
 ```
 
-Vérification avant de livrer : `pnpm test && pnpm lint && pnpm build`.
+## Pipeline de contenu
 
-## Architecture — points d'entrée
+1. **Création** : un article est créé dans `content/blog/<slug>.mdx` (frontmatter YAML + corps MDX/JSX)
+2. **Images** : les images de couverture sont placées dans `blog/<slug>/<uuid>.png` (UUID fixe : `2d89acac-7cff-46da-a8e0-6c0cba53f22c`)
+3. **Aperçu dev** : en développement, le site copie `blog/` vers `public/blog/` et affiche l'article via `/blog/apercu/<slug>`
+4. **Production** : le site récupère les MDX via l'API GitHub (raw) avec cache ISR 3600s
 
-| Chemin | Rôle |
-|---|---|
-| `src/app/resources/config.js` | **Hub config** : baseURL, routes, protectedRoutes, fonts, style/effects |
-| `src/app/resources/content.js` | Tout le contenu (person, home, about, blog, work, services…) — JSX inline |
-| `src/app/layout.tsx` | Root layout : Once UI css, Meta, Schema.org (LocalBusiness + avis Google) |
-| `src/app/(main)/` | Routes FR : `a-propos`, `realisations`, `blog`, `estimation`, `solutions`, `webmaster-albi`, `site-check`, `atomicbd81` |
-| `src/app/utils/serverActions.ts` | Server actions Wisp (`getPosts`, `getPostBySlug`, `getProjects`…) cachées via `unstable_cache(..., { revalidate: 3600 })` |
-| `src/app/utils/types.ts` | `PostType`, `WispPost`, `ProjectType`, `AvisType` |
-| `src/app/api/` | Routes API : `post/[slug]`, `project/[slug]`, `github/…`, `cal/…`, `og/…`, `estimation/[type]`, `revalidate/…`, `cron/…` |
-| `src/app/api/cron/` | Crons Vercel (voir `vercel.json`) : indexNow, social-share (LinkedIn/FB), refresh-facebook-token |
-| `src/modules/seo/` | `Meta.tsx`, `Schema.tsx` |
-| `src/components/` | Composants ; `mdx.tsx` = composants MDX custom ; `chart/` = client |
-| `src/lib/` | google (Calendar), pdf (EstimationPdf), puppeteer, schema, jsxSvg |
-| `src/app/utils/siteCheck/` | Audit de site (perf, seo, a11y, mobile, sécurité) |
+## Format MDX
 
-Alias : `@/*` → `./src/*`.
+### Frontmatter YAML
 
-## Conventions fortes
-
-1. **Server Components par défaut** ; `"use client"` seulement si events/hooks/APIs navigateur.
-2. **Once UI d'abord** : layout via props (`fillWidth`, `gap="m"`, `paddingX="s"`), jamais de CSS custom sur ses composants. SCSS Modules réservés aux composants maison.
-   - **Docs agent Once UI** : harness codegen sur https://docs.once-ui.com/ai/ (`rules.compact.md` avant toute tâche UI, `catalog.json`, `tasks/index.json`, `gotchas.json`) ; questions exploratoires via MCP **context7** (`resolve-library-id` → `query-docs` sur `/once-ui-system/core`). Config IDE : `.vscode/mcp.json` (prompt pour la clé) ; config Hermes : `~/.hermes/config.yaml` → `mcp_servers.context7`, clé dans `~/.hermes/.env` (`MCP_CONTEXT7_API_KEY`).
-
-3. **Params async Next 16** : `{ params }: { params: Promise<{ slug: string }> }` puis `await params`.
-4. **Routes en français** + redirects permanents (`/about`→`/a-propos`, `/work`→`/realisations`) dans `next.config.mjs`.
-5. Data Wisp toujours via server actions cachées — ne pas appeler `wisp.*` directement dans les pages.
-   - **Rédaction d'articles blog** : suivre `docs/wisp-articles-guideline.md`. Générer les brouillons `.mdx` dans `articles/` (non versionné) ; aperçu réel en dev via `/blog` (section brouillons) → `/blog/apercu/<fichier>` ; l'utilisateur les colle ensuite dans Wisp CMS. Composants custom via `<div data-wisp-react-component="true" data-name="Faq|Steps" data-props="<JSON encodeURIComponent>">`.
-6. Variables d'env dans `.env.local` (jamais commité) : `DATABASE_URL`, `WISP_BLOG_ID`, VAPID keys, tokens sociaux, `PASSWORD_PROTECT_ROUTE`.
-7. TS strict : `noUncheckedIndexedAccess`, `verbatimModuleSyntax` (→ `import type` obligatoire pour les types).
-8. Vars inutilisées : préfixe `_` (règle ESLint) ; `unused-imports/no-unused-imports` = error.
-
-### Serveurs MCP enregistrés (Hermes)
-
-| Serveur | Transport | Outils | Usage |
-|---|---|---|---|
-| `context7` | HTTP `https://mcp.context7.com/mcp` | `resolve-library-id`, `query-docs` | Docs à jour Once UI / Next 16 / React 19 avant toute tâche UI ou upgrade |
-| `github` | HTTP `https://api.githubcopilot.com/mcp/` | ~90 (issues, PR, reviews, Actions, code search, secret scanning) | Cycle PR, revue de code, CI |
-
-Ré-installation depuis zéro :
-
-```bash
-hermes mcp add context7 --url https://mcp.context7.com/mcp --auth header       # → MCP_CONTEXT7_API_KEY
-hermes mcp add github   --url https://api.githubcopilot.com/mcp/ --auth header # → MCP_GITHUB_API_KEY (PAT ghp_…)
-hermes mcp list && hermes mcp test <nom>
+```yaml
+---
+titre: "Titre de l'article"
+description: "Meta description 150-160 caractères."
+publishedAt: 2026-09-07T10:00:00.000Z
+image: "/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png"
+tags: ["tag1", "tag2"]
+author: "Michaël Bardy"
+---
 ```
 
-Clés uniquement dans `~/.hermes/.env` (jamais dans `config.yaml` ni le repo ; le repo a ses propres `CONTEXT7_API_KEY` / `GITHUB_TOKEN` dans `.env.local`). Après ajout d'un serveur, ouvrir une **nouvelle session** pour que ses outils soient exposés à l'agent (`/reload-mcp` reconnecte les serveurs mais ne suffit pas toujours, et les slash commands ne sont pas relayées par tous les clients IDE/ACP).
+### Composants disponibles dans le corps
+
+Le composant `<Faq />` (accordéon + JSON-LD FAQPage automatique pour SEO) est disponible directement en JSX :
+
+```jsx
+<Faq title="FAQ" faq={[
+  { title: "Question ?", content: "Réponse." },
+]} />
+```
+
+Les composants Once UI (`Heading`, `Text`, `CodeBlock`, `Table`, etc.) sont enregistrés dans le registre MDX du site et peuvent être utilisés en JSX.
+
+## Images de couverture
+
+- **UUID fixe** : toutes les couvertures utilisent le même nom de fichier `2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` (ou `.jpg`)
+- **Chemin** : `/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` dans le frontmatter
+- **En dev** : copier l'image dans `public/blog/<slug>/` du dépôt site
+- **En prod** : le site récupère l'image via `/api/content-image/...` depuis ce dépôt
+
+## Conventions
+
+- **Pas de `#` (h1)** dans le corps : le titre vient du frontmatter
+- **Ton** : français, vouvoiement pro, orienté freelance/PME locale (Albi/Occitanie)
+- **Sections** : `##` et `###` génèrent des ancres cliquables + table des matières automatique
+- **Fences** : utiliser ` ```lang ` (ex: ` ```js `) pour les blocs de code — le site compile correctement
+- **Liens internes** : chemins relatifs (`/blog/...`, `/realisations/...`)
 
 ## Pièges connus
 
-- Repo et agents tournent **tous en WSL2 Debian 13** (Hermes installé nativement en WSL : `~/.local/bin/hermes`, `HERMES_HOME=~/.hermes` côté Linux, `terminal.backend: local`). Chemins Linux natifs — ne pas passer par `/mnt/c/`. Node 22, pnpm 10.12.
-  - Historique : Hermes tournait avant sous Windows (desktop) contre le repo WSL, d'où les entrées `safe.directory=%(prefix)///wsl.localhost/Debian/…` (× 4) encore présentes dans `~/.gitconfig`. Inutiles désormais, inoffensives ; nettoyables via `git config --global --unset-all safe.directory`.
-- Deux configs ESLint coexistent : `eslint.config.js` (utilisée, CJS) et `eslint.config.mjs` (FlatCompat). Modifier la `.js` en priorité.
-- `content.js` contient du JSX dans un `.js` — ne pas « corriger » ça.
-- PWA : `public/sw.js` servi avec CSP stricte (headers dans `next.config.mjs`).
+- Le chemin `content/blog/` (et non `blog/`) dans ce dépôt correspond aux articles du site
+- Les articles dans `articles/` sont des brouillons non versionnés (workflow local uniquement)
+- `ideas.json` n'est pas exposé en production — il sert de carnet d'idées local
+- Les images dans `blog/` sont copiées vers `public/blog/` du site en dev via `sync-content.mjs` (ou manuellement)
