@@ -1,0 +1,122 @@
+---
+title: "Migrer de WordPress à Next.js sans perdre son référencement : la checklist"
+description: "La cause numéro un des pertes de trafic après migration, c'est le plan de redirections. Voici la procédure complète, étape par étape."
+publishedAt: 2026-11-11T07:00:00.000Z
+updatedAt: 2026-11-11T07:00:00.000Z
+image: "/blog/migrer-de-wordpress-a-next-js-sans-perdre-son-referencement/image.png"
+tags: ["wordpress", "nextjs", "seo"]
+author: "Michaël Bardy"
+---
+
+![Migrer de WordPress à Next.js sans perdre son référencement : la checklist](/blog/migrer-de-wordpress-a-next-js-sans-perdre-son-referencement/image.png)
+
+## Le risque, chiffré
+
+Une migration mal préparée coûte **30 à 60 % du trafic organique**. Ce n'est pas une mise en garde théorique : c'est ce qu'on observe sur les sites dont les URL changent sans redirections correctes.
+
+La bonne nouvelle : ce risque est entièrement maîtrisable. La migration n'est dangereuse que lorsqu'elle est traitée comme un simple changement technique plutôt que comme une opération de préservation de capital SEO.
+
+## Avant de toucher à quoi que ce soit : l'inventaire
+
+La première étape ne se fait pas dans le code, mais dans les données. Il faut savoir précisément ce qu'on risque de perdre.
+
+**Ce qu'il faut collecter :**
+
+- **La liste complète des URL indexées** : Search Console → Indexation → Pages, export complet. C'est votre référence de départ.
+- **Les positions actuelles** : Search Console → Performances, sur 12 mois, par page et par requête. Cela identifie les pages qui rapportent réellement.
+- **Les backlinks** : les liens externes pointant vers vos pages. Chaque URL qui reçoit des liens doit être redirigée, sans exception.
+- **Les conversions** : quelles pages génèrent des contacts, des appels, des demandes de devis. Une page peu visitée mais très convertissante est prioritaire.
+- **Le contenu réel** : textes, images, métadonnées. Une migration est l'occasion de ne pas perdre au passage ce qui fonctionne.
+
+Cette collecte prend quelques heures et conditionne tout le reste. C'est l'étape que les migrations bâclées sautent.
+
+## La règle d'or : préserver les URL quand c'est possible
+
+Avant de planifier des redirections, posez-vous une question simple : **peut-on garder les mêmes URL ?**
+
+Si oui, faites-le. Une URL inchangée ne nécessite aucune redirection, ne perd aucun signal et ne demande aucune réévaluation par Google. C'est le scénario idéal, et il est souvent atteignable : une structure d'URL propre se reproduit facilement.
+
+Si les URL doivent changer — parce que l'ancienne structure était incohérente, ou parce que l'arborescence évolue — alors il faut une redirection **301** pour chaque URL, une pour une.
+
+## La cartographie des redirections
+
+C'est le cœur de l'opération. Trois règles :
+
+1. **Une redirection par URL, vers la page la plus proche en contenu.** Ne redirigez jamais tout vers la page d'accueil : Google traite cela comme un signal de contenu disparu, et la valeur du lien se perd.
+2. **Pas de chaînes de redirections.** A → B → C doit devenir A → C. Chaque saut dilue le signal et ralentit le visiteur.
+3. **Pas de boucles.** Une redirection A → B combinée à B → A crée une boucle infinie : le navigateur affiche une erreur et Google abandonne.
+
+**Les cas particuliers à ne pas oublier :**
+
+- les **articles de blog** avec des slugs différents ;
+- les **pages de catégories et de tags** ;
+- les **pagination** (`/page/2/`) ;
+- les **URL avec paramètres** (utiles pour l'analytics, à rediriger ou à neutraliser) ;
+- les **fichiers** (PDF, images) qui ont leur propre URL ;
+- les **anciennes URL déjà redirigées** dans l'historique.
+
+## Ce qui doit rester identique
+
+La migration change la technologie, pas le contenu. Ces éléments doivent être préservés à l'identique :
+
+- **Les balises `title` et `description`** de chaque page. Si elles étaient bonnes, elles le restent.
+- **La structure des titres** (H1, H2, H3). C'est ce que Google lit pour comprendre la hiérarchie.
+- **Le contenu textuel**. Une migration n'est pas une réécriture : ne changez pas le contenu et la structure en même temps que la technologie, sinon vous ne saurez pas ce qui a causé une éventuelle variation.
+- **Les images**, avec leurs noms de fichiers et leurs attributs `alt`.
+- **Les données structurées** (JSON-LD). C'est un point d'attention : elles sont souvent perdues lors d'une migration, alors qu'elles alimentent les rich snippets.
+
+## Ce qui change (et qu'il faut vérifier)
+
+- **La vitesse** : c'est le gain principal, mais il faut le mesurer après bascule.
+- **Le rendu** : vérifiez que le contenu est bien présent dans le HTML servi, et non injecté uniquement côté client.
+- **Le canonical** : chaque page doit déclarer sa propre URL canonique, en absolu.
+- **Le sitemap** : régénéré, avec les nouvelles URL, et soumis à Search Console.
+- **Le `robots.txt`** : vérifiez qu'il ne bloque rien par erreur — c'est l'erreur classique du fichier de préproduction oublié en production.
+
+## L'ordre de déploiement
+
+<Steps title="Procédure de migration, dans l'ordre" steps={[
+  { title: "Préparer en préproduction", content: "Développez et testez le nouveau site sur une URL de préproduction, protégée par mot de passe ou par un robots.txt en noindex. Elle ne doit jamais être indexable : sinon vous créez du contenu dupliqué." },
+  { title: "Vérifier le contenu", content: "Comparez page par page : titres, descriptions, structure Hn, textes, images, JSON-LD. Utilisez l'export Search Console comme liste de contrôle. Aucune page ne doit manquer." },
+  { title: "Préparer les redirections", content: "Établissez la table complète des 301, une par URL, sans chaîne ni boucle. Testez-les en préproduction avec un outil de vérification de redirections." },
+  { title: "Basculer", content: "Mettez en ligne le nouveau site, activez les redirections, retirez la protection de préproduction, vérifiez que le robots.txt autorise l'indexation. Faites-le en période de faible trafic." },
+  { title: "Déclarer", content: "Soumettez le nouveau sitemap dans Search Console, demandez l'indexation des pages principales, vérifiez que le canonical est correct sur un échantillon de pages." },
+  { title: "Surveiller 30 jours", content: "Suivez chaque semaine : couverture d'indexation, erreurs 404, Core Web Vitals, positions, trafic organique, conversions. C'est la période où l'on détecte et corrige les oublis." }
+]} />
+
+## Les pièges qui coûtent le plus cher
+
+| Piège | Conséquence | Prévention |
+|---|---|---|
+| Redirections manquantes | Perte de 30 à 60 % du trafic | Table complète, une 301 par URL |
+| Tout rediriger vers l'accueil | Valeur des liens perdue | Rediriger vers la page équivalente |
+| Images non migrées | Erreurs 404, contenu dégradé | Comparaison page par page |
+| JSON-LD oublié | Perte des rich snippets | Vérification systématique |
+| Canonical erroné | Contenu dupliqué, indexation confuse | Canonical absolu par page |
+| Sitemap non soumis | Indexation ralentie | Soumission immédiate |
+| `noindex` oublié en production | Site invisible sur Google | Vérification du robots.txt et des balises |
+| Contenu et design modifiés en même temps | Impossible d'isoler la cause d'une variation | Migrer à l'identique, améliorer ensuite |
+
+## Les délais réalistes
+
+- **Vitrine de 5 à 15 pages** : 2 à 3 semaines, préparation comprise.
+- **Blog de 50 à 500 articles** : 3 à 5 semaines, la cartographie des redirections devenant le poste principal.
+- **Site avec e-commerce ou espace client** : ajoutez 1 à 2 semaines pour les parcours transactionnels et les tests.
+
+Prévoyez toujours une marge : la préparation des redirections est le poste qui déborde le plus souvent.
+
+## FAQ
+
+<Faq faqTitle="Migration WordPress vers Next.js : questions fréquentes" faq={[
+  { title: "Vais-je perdre mon référencement ?", content: "Pas si la migration est préparée. Les pertes de 30 à 60 % du trafic organique s'observent sur les migrations sans plan de redirections. Avec un inventaire d'URL complet, une redirection 301 par page et une surveillance post-bascule, la transition se fait sans dégradation durable. Comptez tout de même quelques semaines de fluctuation normale." },
+  { title: "Faut-il garder les mêmes URL ?", content: "Oui, chaque fois que c'est possible. Une URL inchangée ne perd aucun signal et ne demande aucune redirection. Si la structure doit changer, prévoyez une redirection 301 vers la page la plus proche en contenu, jamais vers la page d'accueil." },
+  { title: "Combien de temps avant que Google prenne en compte la migration ?", content: "Le recrawl des pages principales prend quelques jours à quelques semaines. La consolidation complète des signaux, notamment ceux portés par les backlinks, demande plusieurs mois. C'est pourquoi la surveillance doit durer au-delà des 30 premiers jours." },
+  { title: "Puis-je améliorer le design en même temps que la migration ?", content: "C'est déconseillé. Si le trafic ou les conversions varient après la bascule, vous ne saurez pas si c'est dû à la migration, au design ou au contenu. Migrez d'abord à l'identique, puis améliorez dans un second temps, en mesurant séparément." },
+  { title: "Que faire des anciennes URL déjà redirigées ?", content: "Elles doivent être reprises dans la nouvelle table de redirections. Une URL qui pointait vers une page via une redirection doit désormais pointer directement vers la nouvelle destination, pour éviter les chaînes de redirections qui diluent le signal." }
+]} />
+
+## En résumé
+
+Une migration réussie n'est pas un exploit technique : c'est une opération de préservation. L'inventaire d'abord, les redirections ensuite, la surveillance enfin. Le reste — vitesse, architecture, maintenabilité — est le bénéfice qui vient après.
+
+Si vous envisagez de migrer votre site, [parlons-en avant de commencer](/estimation) : la préparation fait toute la différence, et elle se planifie.

@@ -1,0 +1,111 @@
+---
+title: "Sécurité d'un site web en 2026 : les 5 attaques qui visent réellement les TPE/PME"
+description: "Pas de scénario catastrophe : les cinq attaques que subissent vraiment les petites structures, et ce qui les arrête concrètement."
+publishedAt: 2026-11-25T07:00:00.000Z
+updatedAt: 2026-11-25T07:00:00.000Z
+image: "/blog/securite-d-un-site-web-en-2026-les-5-attaques-qui-visent-reellement-les-tpe-pme/image.png"
+tags: ["securite", "rgpd", "performance"]
+author: "Michaël Bardy"
+---
+
+![Sécurité d'un site web en 2026 : les 5 attaques qui visent réellement les TPE/PME](/blog/securite-d-un-site-web-en-2026-les-5-attaques-qui-visent-reellement-les-tpe-pme/image.png)
+
+## Un site de TPE n'est pas « trop petit pour intéresser »
+
+C'est la phrase qui revient le plus souvent : « pourquoi quelqu'un s'attaquerait à mon site, je ne suis qu'un artisan ? »
+
+La réponse tient en un mot : **l'automatisation**. Les attaques ne visent pas votre entreprise en particulier. Des robots scannent l'intégralité du web en permanence, à la recherche de portes ouvertes. Un site de boulangerie et un site de banque reçoivent les mêmes scans — seule la facilité d'entrée diffère.
+
+Ce qui change pour une TPE/PME, c'est le **coût relatif** d'un incident : quelques jours d'indisponibilité, une perte de contacts, une remédiation technique pèsent bien plus lourd sur une petite structure que sur un grand groupe.
+
+Voici les cinq attaques réellement rencontrées, et ce qui les arrête.
+
+## 1. L'injection via les formulaires
+
+**Le principe.** Un robot remplit votre formulaire de contact non pas pour vous écrire, mais pour y injecter du code ou du contenu. Selon la faille, il peut envoyer du spam en masse depuis votre nom, tenter d'accéder à votre base de données, ou utiliser votre site comme relais.
+
+**Ce qu'on observe.** Des dizaines de messages par jour dans la boîte de contact, souvent en anglais, avec des liens suspects. Parfois plus discret : des envois silencieux qui consomment votre quota d'email et dégradent votre réputation d'expéditeur.
+
+**Ce qui protège.** Valider et assainir toutes les entrées côté serveur, jamais uniquement côté navigateur. Ajouter un filtre anti-robot (captcha invisible, champ piège, analyse comportementale). Limiter le nombre d'envois par adresse IP. Sur un site statique sans base de données, l'impact reste limité au spam.
+
+## 2. La force brute sur l'administration
+
+**Le principe.** Des robots essaient des milliers de combinaisons d'identifiant et de mot de passe sur votre page d'administration, jusqu'à trouver la bonne.
+
+**Ce qu'on observe.** Sur WordPress, des centaines de tentatives par jour sur `/wp-admin` ou `/wp-login.php`. Sans protection, un mot de passe faible finit par céder.
+
+**Ce qui protège.** L'authentification à deux facteurs, sans exception. Un gestionnaire de mots de passe avec des mots de passe longs et uniques. La limitation des tentatives de connexion. Et surtout : **changer l'URL d'administration par défaut** réduit mécaniquement le volume de tentatives, car les robots ciblent les chemins standards.
+
+## 3. Le déni de service (DDoS)
+
+**Le principe.** Saturer votre site de requêtes jusqu'à le rendre indisponible. Ce n'est pas une intrusion : c'est un blocage.
+
+**Ce qu'on observe.** Le site devient inaccessible pendant plusieurs heures. Les visiteurs voient une erreur, et vous ne recevez plus aucun contact pendant ce temps. Ce type d'attaque touche aussi bien les sites vitrines que les boutiques en ligne.
+
+**Ce qui protège.** Un hébergement ou un CDN capable d'absorber et de filtrer le trafic en amont — c'est le rôle d'un service comme Cloudflare ou de la couche réseau d'un hébergeur moderne. Un site statique servi par un CDN est nettement plus résistant qu'un serveur unique, car il n'y a pas de point de défaillance applicatif.
+
+## 4. Les dépendances obsolètes
+
+**Le principe.** Votre site utilise des bibliothèques, des extensions ou des thèmes développés par des tiers. Quand une faille est découverte dans l'une d'elles, tous les sites qui l'utilisent deviennent vulnérables — souvent sans que le propriétaire le sache.
+
+**Ce qu'on observe.** C'est la cause la plus fréquente de compromission sur WordPress : une extension non mise à jour depuis des mois, dont la vulnérabilité est publiquement documentée. Les robots la cherchent activement.
+
+**Ce qui protège.** Mettre à jour régulièrement, et **supprimer** ce qui n'est pas utilisé — une extension désactivée mais présente reste une surface d'attaque. Sur un site moderne, la surveillance des dépendances est automatisée (alertes de sécurité sur le dépôt de code). Un site statique sans extensions tierces réduit ce risque à presque rien.
+
+## 5. L'hameçonnage par le formulaire de contact
+
+**Le principe.** Une personne — pas un robot — vous écrit via votre formulaire en se faisant passer pour un client, un fournisseur ou un organisme officiel, pour vous soutirer des informations ou vous faire cliquer sur un lien piégé.
+
+**Ce qu'on observe.** Des messages plausibles : « votre site a un problème, cliquez ici », « facture impayée, voici le lien », « votre hébergement expire ». Le lien mène à une fausse page de connexion qui capture vos identifiants.
+
+**Ce qui protège.** La méfiance systématique envers tout lien reçu par formulaire. Vérifier l'expéditeur en contactant l'organisme par un canal connu, jamais par le lien reçu. Et côté technique : ne jamais cliquer sur un lien depuis la boîte de réception du site.
+
+## Le cas du site statique
+
+Un site statique — comme ceux développés sous Next.js — présente une surface d'attaque structurellement réduite :
+
+- **pas de base de données exposée** à interroger ou à injecter ;
+- **pas de PHP interprété** à la volée, donc pas de faille de script côté serveur ;
+- **pas d'extensions tierces** à maintenir et à surveiller ;
+- **pas de page d'administration** accessible publiquement.
+
+Ce n'est pas invulnérable : les formulaires restent à protéger, les dépendances npm doivent être mises à jour, et l'hébergement doit être fiable. Mais les attaques automatisées de masse n'ont presque rien à exploiter.
+
+## La checklist de vérification
+
+<Steps title="Vérifier la sécurité de son site en 20 minutes" steps={[
+  { title: "Vérifiez le HTTPS", content: "L'adresse doit commencer par https:// et le cadenas doit s'afficher. Un certificat valide et renouvelé automatiquement est la base. Sans HTTPS, les navigateurs affichent un avertissement qui fait fuir les visiteurs." },
+  { title: "Testez vos formulaires", content: "Envoyez-vous un message depuis votre propre formulaire. Vérifiez qu'il arrive, qu'il n'est pas classé en spam, et qu'aucun champ ne permet d'injecter du contenu. Regardez aussi si vous recevez du spam : c'est le signe d'une protection insuffisante." },
+  { title: "Vérifiez les en-têtes de sécurité", content: "Des en-têtes comme Content-Security-Policy, X-Frame-Options et X-Content-Type-Options protègent contre l'injection de contenu et le détournement de page. Leur absence est un signal de configuration négligée." },
+  { title: "Faites le point sur les accès", content: "Qui a un accès administrateur à votre site, à votre hébergement, à votre nom de domaine ? Un ancien prestataire encore administrateur est un risque réel. Retirez les accès inutiles." },
+  { title: "Testez vos sauvegardes", content: "Une sauvegarde qui n'a jamais été restaurée n'est pas une sauvegarde. Vérifiez que vous pouvez récupérer votre site, et que vous savez combien de temps cela prend." },
+  { title: "Activez la double authentification", content: "Sur l'hébergement, le nom de domaine, l'administration du site et votre messagerie professionnelle. C'est la mesure la plus rentable de toute cette liste." }
+]} />
+
+## Et si ça arrive quand même
+
+En cas d'incident, la procédure est toujours la même :
+
+1. **Isoler** — couper l'accès compromis, mettre le site hors ligne si nécessaire.
+2. **Sauvegarder** — conserver une copie de l'état compromis pour analyse, avant toute restauration.
+3. **Restaurer** — revenir à une version saine, puis corriger la faille qui a permis l'intrusion.
+4. **Renouveler les secrets** — mots de passe, clés d'API, jetons. Tous, sans exception.
+5. **Informer** — si des données personnelles ont été exposées, le RGPD impose une notification à la CNIL **sous 72 heures** (article 33), et une information des personnes concernées si le risque est élevé.
+
+Ce dernier point est souvent ignoré : un site vitrine qui collecte des adresses email via un formulaire traite des données personnelles. Une fuite déclenche donc des obligations légales, pas seulement techniques.
+
+## FAQ
+
+<Faq faqTitle="Sécurité de site web : questions fréquentes" faq={[
+  { title: "Mon site est petit, pourquoi serait-il attaqué ?", content: "Parce que les attaques sont automatisées. Des robots scannent l'ensemble du web à la recherche de portes ouvertes, sans viser votre entreprise en particulier. Un site de TPE reçoit les mêmes scans qu'un grand site : seule la facilité d'entrée diffère. Et le coût relatif d'un incident est bien plus lourd pour une petite structure." },
+  { title: "Un site statique est-il vraiment plus sûr ?", content: "Sa surface d'attaque est structurellement réduite : pas de base de données exposée, pas de PHP interprété, pas d'extensions tierces, pas de page d'administration publique. Ce n'est pas invulnérable — les formulaires et les dépendances restent à surveiller — mais les attaques automatisées de masse n'ont presque rien à exploiter." },
+  { title: "Quelle est la mesure la plus rentable ?", content: "La double authentification, sur l'hébergement, le nom de domaine, l'administration du site et la messagerie professionnelle. Elle bloque la majorité des compromissions liées au vol d'identifiants, pour un coût nul et quelques minutes de configuration." },
+  { title: "Que faire en cas de fuite de données ?", content: "Le RGPD impose une notification à la CNIL dans les 72 heures suivant la prise de connaissance de la violation (article 33). Si le risque est élevé pour les personnes concernées, elles doivent aussi être informées directement. C'est une obligation légale, pas seulement une bonne pratique." },
+  { title: "Faut-il un pare-feu applicatif (WAF) ?", content: "C'est utile sur un site dynamique exposé, notamment sous WordPress. Sur un site statique servi par un CDN, la protection réseau est déjà largement assurée en amont. Dans tous les cas, un WAF ne remplace pas les mesures de base : HTTPS, mises à jour, double authentification et sauvegardes testées." }
+]} />
+
+## En résumé
+
+La sécurité d'un site de TPE/PME ne relève pas du scénario catastrophe, mais de l'hygiène : formulaires protégés, accès maîtrisés, mises à jour suivies, sauvegardes testées, double authentification activée. Aucune de ces mesures n'est coûteuse, et leur combinaison bloque l'immense majorité des attaques réelles.
+
+Si vous voulez savoir où en est votre site, [l'audit de site](/site-check) vérifie la sécurité, la performance, le SEO et l'accessibilité, et vous donne les corrections par ordre de priorité.

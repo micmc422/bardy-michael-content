@@ -1,0 +1,115 @@
+---
+title: "Core Web Vitals en 2026 : les 3 chiffres qui décident de votre place sur Google"
+description: "LCP, INP, CLS : trois seuils, mesurés sur vos visiteurs réels et non sur un score d'audit. Voici ce que Google regarde vraiment, et comment le vérifier vous-même."
+publishedAt: 2026-10-14T07:00:00.000Z
+updatedAt: 2026-10-14T07:00:00.000Z
+image: "/blog/core-web-vitals-2026-les-3-chiffres-qui-decident-de-votre-place-sur-google/image.png"
+tags: ["performance", "seo", "core-web-vitals"]
+author: "Michaël Bardy"
+---
+
+![Core Web Vitals en 2026 : les 3 chiffres qui décident de votre place sur Google](/blog/core-web-vitals-2026-les-3-chiffres-qui-decident-de-votre-place-sur-google/image.png)
+
+## Trois chiffres, pas un score
+
+Quand on parle de vitesse de site, tout le monde a en tête le fameux « score » de 90 ou 100 affiché par les outils d'audit. Ce score est utile pour diagnostiquer, mais **il n'entre pas dans le classement Google**. Ce que Google utilise, ce sont les **Core Web Vitals** — trois indicateurs mesurés sur les visites réelles de vos utilisateurs, agrégés dans un rapport public appelé **CrUX** (Chrome User Experience Report).
+
+Ces trois indicateurs sont les suivants.
+
+| Indicateur | Ce qu'il mesure | Seuil « bon » |
+|---|---|---|
+| **LCP** (Largest Contentful Paint) | Le temps d'affichage du plus grand élément visible | ≤ 2,5 secondes |
+| **INP** (Interaction to Next Paint) | La réactivité après un clic, un tap ou une frappe | ≤ 200 millisecondes |
+| **CLS** (Cumulative Layout Shift) | La stabilité visuelle (éléments qui sautent) | ≤ 0,1 |
+
+Un site est considéré comme « bon » sur un indicateur lorsque **75 % des visites** passent le seuil. C'est le **75ᵉ percentile**, pas la moyenne. Autrement dit : si un quart de vos visiteurs vit une mauvaise expérience, l'indicateur est classé « à améliorer », même si la moyenne paraît correcte.
+
+## Pourquoi votre score Lighthouse ne suffit pas
+
+C'est le malentendu le plus fréquent, et il coûte cher en temps perdu.
+
+Un audit Lighthouse tourne sur **une seule machine, avec une connexion simulée**. Il vous dit ce que votre site *pourrait* faire dans des conditions contrôlées. Le rapport CrUX, lui, agrège **28 jours de données réelles**, sur de vrais appareils, de vraies connexions, dans de vrais lieux.
+
+La conséquence est simple : vous pouvez avoir 100 sur Lighthouse et un LCP classé « à améliorer » dans Search Console. L'inverse est plus rare mais possible. **Le seul juge, c'est le terrain.**
+
+Pour consulter vos données réelles, deux points d'entrée :
+
+- **PageSpeed Insights** : saisissez votre URL, puis regardez la section « Données utilisateur réelles » (distincte de la section « Diagnostics »).
+- **Search Console** → **Expérience** → **Signaux web essentiels** : c'est le rapport officiel, avec le détail par groupe d'URL et par type d'appareil.
+
+## INP : l'indicateur que tout le monde a oublié de traiter
+
+Le 12 mars 2024, Google a remplacé le **FID** (First Input Delay) par l'**INP**. Beaucoup de sites ont été optimisés pour le FID à l'époque et n'ont jamais été retravaillés depuis. Résultat : des sites rapides au chargement mais qui semblent « coller » dès qu'on clique.
+
+La différence est importante. Le FID ne mesurait que le **délai avant le début** du traitement d'une interaction. L'INP mesure **tout le cycle** : délai d'attente, temps de traitement, et temps d'affichage de la mise à jour. Il capture donc les tâches longues qui bloquent le fil principal du navigateur.
+
+Ce qui dégrade l'INP, concrètement :
+
+- du JavaScript qui s'exécute au chargement et monopolise le processeur ;
+- une hydratation lourde (le moment où React « reprend la main » sur le HTML) ;
+- des gestionnaires d'événements qui font trop de travail d'un coup ;
+- des scripts tiers (chat, analytics, cartes, vidéos) qui s'exécutent au pire moment.
+
+Ce qui l'améliore :
+
+- réduire le JavaScript envoyé au navigateur ;
+- découper les tâches longues (`scheduler.yield`, `requestIdleCallback`) ;
+- charger les scripts tiers après l'interaction, ou en `defer` ;
+- utiliser les Server Components, qui déplacent le rendu côté serveur.
+
+## LCP : le plus visible, et souvent le plus simple à corriger
+
+Le LCP est le temps nécessaire pour afficher le plus grand élément visible — souvent une image d'en-tête, un titre, ou un bloc de contenu principal.
+
+Les causes les plus fréquentes d'un mauvais LCP :
+
+1. **Une image non optimisée** : format ancien, dimensions excessives, pas de `priority`. Une image de 2 Mo au format PNG à la place d'un WebP de 120 Ko peut à elle seule faire passer le LCP de 1,5 s à 4 s.
+2. **Une police bloquante** : une police chargée sans `font-display: swap` empêche l'affichage du texte.
+3. **Un serveur lent** : le temps de réponse serveur (TTFB) se répercute intégralement sur le LCP.
+4. **Des ressources critiques chargées tard** : CSS ou JavaScript qui bloquent le rendu.
+
+Les leviers, dans l'ordre d'efficacité : servir l'image principale en priorité (`fetchpriority="high"`), la convertir en WebP ou AVIF, dimensionner correctement, et réduire le TTFB (cache, hébergement adapté, rendu statique quand c'est possible).
+
+## CLS : l'indicateur le plus sous-estimé
+
+Le CLS mesure les décalages de mise en page : ces moments où vous vous apprêtez à cliquer sur un bouton et où le contenu saute, vous faisant cliquer à côté. C'est frustrant pour l'utilisateur, et Google le pénalise.
+
+Les trois causes principales :
+
+- **des images ou vidéos sans dimensions déclarées** (`width`/`height` ou `aspect-ratio`) : le navigateur réserve l'espace une fois l'image chargée, ce qui décale tout ;
+- **des publicités, bannières ou contenus injectés** en haut de page sans espace réservé ;
+- **des polices web** dont le rendu diffère du fallback, provoquant un décalage du texte (corrigé par `size-adjust` ou une police de repli métriquement proche).
+
+La bonne pratique est simple : **réservez toujours l'espace** avant que le contenu n'arrive.
+
+## La rumeur à corriger
+
+Depuis quelques mois, on lit régulièrement que le seuil du LCP serait passé à **2,0 seconde** en 2026. **C'est faux.** Le seuil reste **2,5 secondes**. Google n'a pas modifié les seuils des Core Web Vitals.
+
+Méfiez-vous des articles qui annoncent un durcissement sans citer de source officielle : les seuils sont documentés publiquement et changent rarement, avec une période de transition annoncée à l'avance.
+
+## Comment mesurer vous-même, sans outil payant
+
+<Steps title="Mesurer ses Core Web Vitals en 10 minutes" steps={[
+  { title: "Vérifiez l'indexation", content: "Dans Search Console, onglet Expérience > Signaux web essentiels. Si la section est vide, votre site n'a pas assez de trafic pour que CrUX publie des données : passez aux étapes suivantes avec un outil de laboratoire." },
+  { title: "Lisez les données réelles", content: "Ouvrez PageSpeed Insights sur votre URL. La section du haut (données utilisateur réelles) reflète le terrain ; la section du bas (Lighthouse) est une simulation. Ne confondez pas les deux." },
+  { title: "Identifiez l'élément LCP", content: "Dans PageSpeed Insights, cherchez la ligne « Élément LCP » : elle vous nomme précisément l'image ou le bloc de texte qui pénalise votre score. C'est souvent une image d'en-tête." },
+  { title: "Testez l'interaction", content: "Ouvrez votre site sur un téléphone d'entrée de gamme, cliquez sur le menu, ouvrez un accordéon. Si l'interface répond avec un délai perceptible, votre INP est en cause." },
+  { title: "Corrigez par ordre d'impact", content: "Image LCP d'abord (souvent le gain le plus rapide), puis les scripts tiers, puis les dimensions d'images pour le CLS. Remesurez 28 jours plus tard : c'est le délai d'agrégation de CrUX." }
+]} />
+
+## FAQ
+
+<Faq faqTitle="Core Web Vitals : questions fréquentes" faq={[
+  { title: "Mon score Lighthouse est de 100, pourquoi Google me dit « à améliorer » ?", content: "Parce que Lighthouse mesure une simulation sur une machine, tandis que Google utilise les données réelles de vos visiteurs (rapport CrUX), agrégées sur 28 jours. Un score parfait en laboratoire peut coexister avec un LCP dégradé sur le terrain, notamment sur mobile en connexion lente." },
+  { title: "Le seuil du LCP est-il passé à 2 secondes ?", content: "Non. C'est une rumeur. Le seuil officiel du LCP reste de 2,5 secondes, évalué au 75e percentile des visites réelles. Google n'a pas modifié les seuils des Core Web Vitals." },
+  { title: "Quelle différence entre FID et INP ?", content: "Le FID, remplacé par l'INP le 12 mars 2024, ne mesurait que le délai avant le début du traitement d'une interaction. L'INP mesure tout le cycle : attente, traitement et affichage du résultat. Il est donc plus exigeant et révèle les tâches longues qui bloquent le navigateur." },
+  { title: "Combien de temps avant de voir l'effet de mes corrections ?", content: "Le rapport CrUX agrège 28 jours de données glissantes. Après une correction, comptez donc environ un mois avant que le changement soit pleinement visible dans Search Console. Les outils de laboratoire, eux, réagissent immédiatement." },
+  { title: "Les Core Web Vitals sont-ils un facteur de classement ?", content: "Oui, mais ce n'est pas le facteur principal. Google l'a confirmé : le contenu et la pertinence priment. Les Core Web Vitals servent surtout d'arbitrage entre deux pages de qualité comparable — et ils influencent directement le taux de rebond et la conversion." }
+]} />
+
+## En résumé
+
+Trois chiffres, un seul juge : vos visiteurs réels. Le LCP se corrige souvent en optimisant une seule image, l'INP en allégeant le JavaScript, le CLS en réservant l'espace des médias. Ce sont des chantiers mesurables, avec un retour visible en un mois.
+
+Si vous voulez savoir où en est votre site sans y passer vos soirées, [l'audit de site](/site-check) mesure la performance, le SEO, l'accessibilité et la sécurité, et vous donne un plan d'action priorisé.
