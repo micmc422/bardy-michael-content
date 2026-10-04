@@ -227,8 +227,8 @@ La gestion de l'asynchronisme en Node.js a parcouru un long chemin. Si les callb
 
 En maîtrisant des outils comme les importations dynamiques et `Promise.all`, vous pouvez non seulement écrire du code robuste, mais aussi l'optimiser pour offrir des performances maximales.
 <Faq faqTitle="FAQ : asynchronisme Node.js" faq={[
-  { title: "Qu'est-ce que le Callback Hell et comment l'Ã©viter ?", content: "Le Callback Hell est une structure de code imbriquÃ©e difficile Ã  lire. Ãvitez-le en passant aux Promises puis async/await, ou en utilisant des fonctions nommÃ©es modulaires." },
-  { title: "async/await bloque-t-il le thread principal ?", content: "Non, async/await diffÃ¨re l'exÃ©cution sans bloquer le thread. Seul le code synchrone dans la fonction est exÃ©cutÃ© immÃ©diatement ; les await suspendent l'exÃ©cution jusqu'Ã  rÃ©solution de la promesse." },
-  { title: "Pourquoi utiliser Promise.all pour optimiser le chargement ?", content: "Promise.all exÃ©cute plusieurs promesses en parallÃ¨le au lieu de sÃ©quentiellement. Cela rÃ©duit le temps total de chargement Ã  celui de la tÃ¢che la plus longue, idÃ©al pour les donnÃ©es indÃ©pendantes." },
-  { title: "Comment gÃ©rer les erreurs avec async/await ?", content: "Utilisez un bloc try...catch autour du code async. Si une promesse est rejetÃ©e, l'erreur est interceptÃ©e par le catch, Ã©vitant un crash silencieux ou une propagation non gÃ©rÃ©e." }
+  { title: "Qu'est-ce que le Callback Hell et comment l'éviter ?", content: "Le Callback Hell est une structure de code imbriquée difficile à lire. Évitez-le en passant aux Promises puis async/await, ou en utilisant des fonctions nommées modulaires." },
+  { title: "async/await bloque-t-il le thread principal ?", content: "Non, async/await diffère l'exécution sans bloquer le thread. Seul le code synchrone dans la fonction est exécuté immédiatement ; les await suspendent l'exécution jusqu'à résolution de la promesse." },
+  { title: "Pourquoi utiliser Promise.all pour optimiser le chargement ?", content: "Promise.all exécute plusieurs promesses en parallèle au lieu de séquentiellement. Cela réduit le temps total de chargement à celui de la tâche la plus longue, idéal pour les données indépendantes." },
+  { title: "Comment gérer les erreurs avec async/await ?", content: "Utilisez un bloc try...catch autour du code async. Si une promesse est rejetée, l'erreur est interceptée par le catch, évitant un crash silencieux ou une propagation non gérée." }
 ]} />

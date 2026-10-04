@@ -132,9 +132,9 @@ Le dogme « ne jamais bloquer le thread principal » reste valable face aux erre
 Et si vous avez besoin d'un audit complet — Core Web Vitals, audit d'accessibilité, refonte Next.js — l'équipe d'Occitaweb est là pour vous accompagner dans la ville d'Albi et ses environs.
 
 <Faq faqTitle="Foire aux questions : performance web et thread principal" faq={[
-  { title: "Qu'est-ce que le thread principal d'un navigateur ?", content: "C'est le processus unique du navigateur qui exÃ©cute le HTML, le CSS, le JavaScript et gÃ¨re les interactions utilisateur. S'il est occupÃ©, la page semble figÃ©e." },
-  { title: "Un blocage de 200 ms est-il pÃ©nalisÃ© par Google ?", content: "Tout dÃ©pend de la mÃ©trique concernÃ©e. Le FID Ã©value le dÃ©lai de la premiÃ¨re interaction; l'INP mÃ©diane rend compte de la rÃ©activitÃ© globale. Un blocage de 200 ms bien signalÃ© reste gÃ©nÃ©ralement acceptable." },
-  { title: "Comment dÃ©tecter les blocages involontaires sur mon site ?", content: "Utilisez les onglets Performance et Lighthouse de Chrome DevTools, ainsi que l'outil Web Vitals. Un Long Task au-delÃ  de 50 ms doit Ãªtre analysÃ© et corrigÃ©." },
-  { title: "Vaut-il mieux utiliser un Web Worker par systÃ©matique ?", content: "Non. Un Worker ajoute de la complexitÃ© et une surcharge de communication. Si le travail est court et doit rester cohÃ©rent avec l'interface, un blocage contrÃ´lÃ© est souvent la meilleure solution." }
+  { title: "Qu'est-ce que le thread principal d'un navigateur ?", content: "C'est le processus unique du navigateur qui exécute le HTML, le CSS, le JavaScript et gère les interactions utilisateur. S'il est occupé, la page semble figée." },
+  { title: "Un blocage de 200 ms est-il pénalisé par Google ?", content: "Tout dépend de la métrique concernée. Le FID évalue le délai de la première interaction; l'INP médiane rend compte de la réactivité globale. Un blocage de 200 ms bien signalé reste généralement acceptable." },
+  { title: "Comment détecter les blocages involontaires sur mon site ?", content: "Utilisez les onglets Performance et Lighthouse de Chrome DevTools, ainsi que l'outil Web Vitals. Un Long Task au-delà de 50 ms doit être analysé et corrigé." },
+  { title: "Vaut-il mieux utiliser un Web Worker par systématique ?", content: "Non. Un Worker ajoute de la complexité et une surcharge de communication. Si le travail est court et doit rester cohérent avec l'interface, un blocage contrôlé est souvent la meilleure solution." }
 ]} />
 ```
