@@ -1,5 +1,7 @@
 # Prompts Nano Banana — Images de couverture manquantes
 
+> **Méthode automatisée** : voir `image-generation.md` pour le pipeline complet (FAL nano-banana-pro + sharp). Les prompts ci-dessent restent la référence pour le thème de chaque article.
+
 **Spécifications communes :**
 - Format : 16:9 (1920×1080)
 - Style : illustration éditoriale moderne, flat design, ambiance tech
