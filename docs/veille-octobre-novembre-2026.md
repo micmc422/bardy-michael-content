@@ -219,7 +219,7 @@
 ## Notes de production
 
 - **Frontmatter obligatoire** : `title`, `description` (150-160 car.), `publishedAt`, `updatedAt`, `image`, `tags` (2-4), `author`.
-- **Image de couverture** : `/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` (UUID fixe).
+- **Image de couverture** : `/blog/<slug>/image.webp` (site) + `image.png` (OG). Voir `docs/image-generation.md`.
 - **Pas de `#` (h1)** dans le corps — le titre vient du frontmatter.
 - **Terminer par `<Faq />`** pour le JSON-LD FAQPage (rich snippets).
 - **Liens internes absolus** (`/blog/...`, `/realisations/...`).

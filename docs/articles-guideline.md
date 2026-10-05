@@ -12,7 +12,7 @@ title: "Titre de l'article"
 description: "Meta description 150-160 caractères. Résumé qui apparaît dans les cartes de liste et les moteurs de recherche."
 publishedAt: 2026-09-07T10:00:00.000Z
 updatedAt: 2026-09-07T10:00:00.000Z
-image: "/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png"
+image: "/blog/<slug>/image.webp"
 tags: ["tag1", "tag2", "tag3"]
 author: "Michaël Bardy"
 ---
@@ -21,7 +21,7 @@ author: "Michaël Bardy"
 - `title` : h1 de la page (généré automatiquement, pas de `#` dans le corps)
 - `description` : meta description, OG/Twitter, JSON-LD, résumé des cartes (150-160 car.)
 - `publishedAt` / `updatedAt` : dates ISO 8601, tri des listes, JSON-LD `datePublished`/`dateModified`
-- `image` : chemin `/blog/<slug>/<uuid>.png` — voir section Images
+- `image` : chemin `/blog/<slug>/image.webp` — voir section Images
 - `tags` : 2-4 tags, cliquables sur le site (`/blog/tags/<name>`)
 - `author` : nom affiché (défaut : Michaël Bardy)
 
@@ -73,19 +73,19 @@ Utiliser les fences markdown standard avec langage :
 ```js
 // Code JavaScript
 const x = 1;
-``````
+```
 
 ```bash
 pnpm dev
-``````
+```
 
 ```css
 .clamp {
   font-size: clamp(1rem, 2vw, 2rem);
 }
-``````
+```
 
-Le site compile correctement les fences (pas de restriction comme avec Wisp).
+Le site compile correctement les fences.
 
 ## 4. Liens
 
@@ -109,11 +109,12 @@ Le site compile correctement les fences (pas de restriction comme avec Wisp).
 
 ### Image de couverture (obligatoire)
 
-- **UUID fixe** : toutes les couvertures utilisent `2d89acac-7cff-46da-a8e0-6c0cba53f22c.png`
-- **Emplacement** : `blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` dans ce dépôt
-- **Chemin frontmatter** : `/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png`
+- **Fichiers** : `image.webp` (servi sur le site, ~26 Ko) + `image.png` (réservé à la route OG, ~260 Ko)
+- **Emplacement** : `blog/<slug>/` dans ce dépôt
+- **Chemin frontmatter** : `/blog/<slug>/image.webp`
 - **En prod** : le site récupère l'image via `/api/content-image/...` (proxy GitHub)
 - **En dev** : copier l'image dans `public/blog/<slug>/` du dépôt site
+- **Génération** : voir `docs/image-generation.md` pour la méthode FAL nano-banana-pro
 
 ### Images dans le corps
 
@@ -152,7 +153,7 @@ Contenu avec <Faq title="FAQ" faq={[
 
 - [ ] Frontmatter complet (title, description 150-160c, publishedAt, image, tags, author)
 - [ ] Aucun `#` h1 dans le corps
-- [ ] Image de couverture présente dans `blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png`
+- [ ] Image de couverture présente dans `blog/<slug>/image.webp` + `image.png`
 - [ ] Fences avec langage (`js`, `ts`, `bash`, `css`, `html`…)
 - [ ] Alt sur toutes les images
 - [ ] Liens internes en chemin absolu (`/blog/...`, `/realisations/...`)

@@ -27,7 +27,7 @@ docs/              # Documentation (guidelines, etc.)
 ## Pipeline de contenu
 
 1. **Création** : un article est créé dans `content/blog/<slug>.mdx` (frontmatter YAML + corps MDX/JSX)
-2. **Images** : les images de couverture sont placées dans `blog/<slug>/<uuid>.png` (UUID fixe : `2d89acac-7cff-46da-a8e0-6c0cba53f22c`)
+2. **Images** : les images de couverture sont placées dans `blog/<slug>/image.png` (et `image.webp` pour le site)
 3. **Aperçu dev** : en développement, le site copie `blog/` vers `public/blog/` et affiche l'article via `/blog/apercu/<slug>`
 4. **Production** : le site récupère les MDX via l'API GitHub (raw) avec cache ISR 3600s
 
@@ -40,7 +40,7 @@ docs/              # Documentation (guidelines, etc.)
 titre: "Titre de l'article"
 description: "Meta description 150-160 caractères."
 publishedAt: 2026-09-07T10:00:00.000Z
-image: "/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png"
+image: "/blog/<slug>/image.webp"
 tags: ["tag1", "tag2"]
 author: "Michaël Bardy"
 ---
@@ -60,10 +60,11 @@ Les composants Once UI (`Heading`, `Text`, `CodeBlock`, `Table`, etc.) sont enre
 
 ## Images de couverture
 
-- **UUID fixe** : toutes les couvertures utilisent le même nom de fichier `2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` (ou `.jpg`)
-- **Chemin** : `/blog/<slug>/2d89acac-7cff-46da-a8e0-6c0cba53f22c.png` dans le frontmatter
+- **Fichiers** : `image.webp` (servi sur le site, ~26 Ko) + `image.png` (réservé à la route OG, ~260 Ko)
+- **Chemin** : `/blog/<slug>/image.webp` dans le frontmatter
 - **En dev** : copier l'image dans `public/blog/<slug>/` du dépôt site
 - **En prod** : le site récupère l'image via `/api/content-image/...` depuis ce dépôt
+- **Génération** : voir `docs/image-generation.md` pour la méthode FAL nano-banana-pro
 
 ## Conventions
 
